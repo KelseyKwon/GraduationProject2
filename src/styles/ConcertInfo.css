@@ -1,0 +1,76 @@
+/* 전체 컨테이너 */
+.concert-info-container {
+  width: 644px; /* 컨테이너의 고정 너비 */
+  height: 70%; /* 전체 높이 */
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  padding: 16px;
+  border-radius: 12px;
+  position: absolute; /* 위치를 고정 */
+  top: 50%; /* 세로 중앙 정렬 */
+  right: 200px; /* 화면 오른쪽에서 떨어진 거리 */
+  transform: translateY(-50%); /* 세로 중앙 보정 */
+  z-index: 2;
+}
+
+/* 개별 공연 항목 */
+.concert-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 23px;
+  padding: 16px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* 썸네일 */
+.concert-thumbnail {
+  width: 100px;
+  height: 100px;
+  background: #d9d9d9;
+  border-radius: 8px;
+}
+
+/* 공연 세부정보 */
+.concert-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* 날짜 */
+.concert-date {
+  color: #999999;
+  font-size: 15px;
+  font-family: Pretendard, sans-serif;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+/* 공연단 이름 */
+.concert-name {
+  color: black;
+  font-size: 20px;
+  font-family: Pretendard, sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+/* 예매 버튼 */
+.concert-link {
+  width: 231px;
+  height: 26px;
+  padding: 5px 20px;
+  background: rgba(180, 80, 197, 0.06);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #b450c5;
+  font-size: 14px;
+  font-family: Pretendard, sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+}
