@@ -1,0 +1,626 @@
+[
+    {
+        "date": "2025.02.02.",
+        "venue": {
+            "country": "England",
+            "city": "London",
+            "name": "London Symphony Orchestra"
+        },
+        "coordinates": {
+            "latitude": 51.52036789302824,
+            "longitude": -0.09389369077487116
+        },
+        "details": "SCHUMANN Piano Concerto\n"
+    },
+    {
+        "date": "2025.02.04.",
+        "venue": {
+            "country": "Italy",
+            "city": "Milan",
+            "name": "Verdi Hall"
+        },
+        "coordinates": {
+            "latitude": 51.50078681056803,
+            "longitude": -0.1773772600950117
+        },
+        "details": "TCHAIKOVSKY Piano Sonata in C-sharp Minor, Op. 80\nCHOPIN\nWaltz in E Major, Op. Posth.\nWaltz in F Minor, Op. 70, No. 2\nWaltz in A♭ Major, Op. 64, No. 3\nWaltz in D♭ Major, Op. 64, No. 1\nWaltz in A Minor, Op. 34, No. 2\nWaltz in E Minor, Op. Posth.\nBARBER Sonata in E-flat minor, Op. 26\nTCHAIKOVSKY Concert Suite from the ballet The Sleeping Beauty (arr. Mikhail Pletnev)\n"
+    },
+    {
+        "date": "2025.02.05.",
+        "venue": {
+            "country": "Italy",
+            "city": "Rome",
+            "name": "Accademia Nazionale di Santa Cecilia"
+        },
+        "coordinates": {
+            "latitude": 41.93014710449184,
+            "longitude": 12.474201791147395
+        },
+        "details": "TCHAIKOVSKY Piano Sonata in C-sharp Minor, Op. 80\nCHOPIN\nWaltz in E Major, Op. Posth.\nWaltz in F Minor, Op. 70, No. 2\nWaltz in A♭ Major, Op. 64, No. 3\nWaltz in D♭ Major, Op. 64, No. 1\nWaltz in A Minor, Op. 34, No. 2\nWaltz in E Minor, Op. Posth.\nBARBER Sonata in E-flat minor, Op. 26\nTCHAIKOVSKY Concert Suite from the ballet The Sleeping Beauty (arr. Mikhail Pletnev)\n"
+    },
+    {
+        "date": "2025.02.06.",
+        "venue": {
+            "country": "Italy",
+            "city": "Napoli",
+            "name": "Teatro di San Carlo"
+        },
+        "coordinates": {
+            "latitude": 40.83756584220026,
+            "longitude": 14.249745085452794
+        },
+        "details": "TCHAIKOVSKY Piano Sonata in C-sharp Minor, Op. 80\nCHOPIN\nWaltz in E Major, Op. Posth.\nWaltz in F Minor, Op. 70, No. 2\nWaltz in A♭ Major, Op. 64, No. 3\nWaltz in D♭ Major, Op. 64, No. 1\nWaltz in A Minor, Op. 34, No. 2\nWaltz in E Minor, Op. Posth.\nBARBER Sonata in E-flat minor, Op. 26\nTCHAIKOVSKY Concert Suite from the ballet The Sleeping Beauty (arr. Mikhail Pletnev)\n"
+    },
+    {
+        "date": "2025.02.09.",
+        "venue": {
+            "country": "Germany",
+            "city": "Mannheim",
+            "name": "Mannheim Philharmonic"
+        },
+        "coordinates": {
+            "latitude": 49.48628732751386,
+            "longitude": 8.476543985830414
+        },
+        "details": "SCHUMANN Piano Concerto\n"
+    },
+    {
+        "date": "2025.02.11.",
+        "venue": {
+            "country": "Spain",
+            "city": "San Sebastián",
+            "name": "Auditorio Kursaal"
+        },
+        "coordinates": {
+            "latitude": 43.32444225651648,
+            "longitude": -1.9783892758060777
+        },
+        "details": "TCHAIKOVSKY Piano Sonata in C-sharp Minor, Op. 80\nCHOPIN\nWaltz in E Major, Op. Posth.\nWaltz in F Minor, Op. 70, No. 2\nWaltz in A♭ Major, Op. 64, No. 3\nWaltz in D♭ Major, Op. 64, No. 1\nWaltz in A Minor, Op. 34, No. 2\nWaltz in E Minor, Op. Posth.\nBARBER Sonata in E-flat minor, Op. 26\nTCHAIKOVSKY Concert Suite from the ballet The Sleeping Beauty (arr. Mikhail Pletnev)\n"
+    },
+    {
+        "date": "2025.02.12.",
+        "venue": {
+            "country": "Spain",
+            "city": "Sevilla",
+            "name": "Teatro de la Maestranza"
+        },
+        "coordinates": {
+            "latitude": 37.38399107164224,
+            "longitude": -5.996914428176119
+        },
+        "details": "TCHAIKOVSKY Piano Sonata in C-sharp Minor, Op. 80\nCHOPIN\nWaltz in E Major, Op. Posth.\nWaltz in F Minor, Op. 70, No. 2\nWaltz in A♭ Major, Op. 64, No. 3\nWaltz in D♭ Major, Op. 64, No. 1\nWaltz in A Minor, Op. 34, No. 2\nWaltz in E Minor, Op. Posth.\nBARBER Sonata in E-flat minor, Op. 26\nTCHAIKOVSKY Concert Suite from the ballet The Sleeping Beauty (arr. Mikhail Pletnev)\n"
+    },
+    {
+        "date": "2025.02.14.",
+        "venue": {
+            "country": "Spain",
+            "city": "Barcelona",
+            "name": "Palau de la Música Catalana"
+        },
+        "coordinates": {
+            "latitude": 41.38776704857211,
+            "longitude": 2.1753382449910723
+        },
+        "details": "TCHAIKOVSKY Piano Sonata in C-sharp Minor, Op. 80\nCHOPIN\nWaltz in E Major, Op. Posth.\nWaltz in F Minor, Op. 70, No. 2\nWaltz in A♭ Major, Op. 64, No. 3\nWaltz in D♭ Major, Op. 64, No. 1\nWaltz in A Minor, Op. 34, No. 2\nWaltz in E Minor, Op. Posth.\nBARBER Sonata in E-flat minor, Op. 26\nTCHAIKOVSKY Concert Suite from the ballet The Sleeping Beauty (arr. Mikhail Pletnev)\n"
+    },
+    {
+        "date": "2025.02.21.",
+        "venue": {
+            "country": "California",
+            "city": "San Francisco",
+            "name": "San Francisco Symphony"
+        },
+        "coordinates": {
+            "latitude": 37.77780677197687,
+            "longitude": -122.42063815884204
+        },
+        "details": "PROKOFIEV Piano Concerto no. 2\n"
+    },
+    {
+        "date": "2025.02.22.",
+        "venue": {
+            "country": "California",
+            "city": "San Francisco",
+            "name": "San Francisco Symphony"
+        },
+        "coordinates": {
+            "latitude": 37.77780677197687,
+            "longitude": -122.42063815884204
+        },
+        "details": "PROKOFIEV Piano Concerto no. 2\n"
+    },
+    {
+        "date": "2025.02.23.",
+        "venue": {
+            "country": "California",
+            "city": "San Francisco",
+            "name": "San Francisco Symphony"
+        },
+        "coordinates": {
+            "latitude": 37.77780677197687,
+            "longitude": -122.42063815884204
+        },
+        "details": "PROKOFIEV Piano Concerto no. 2\n"
+    },
+    {
+        "date": "2025.02.26.",
+        "venue": {
+            "country": "PA",
+            "city": "Philadelphia",
+            "name": "Kimmel Center"
+        },
+        "coordinates": {
+            "latitude": 39.94695797463517,
+            "longitude": -75.16529700293381
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.03.02.",
+        "venue": {
+            "country": "D.C.",
+            "city": "Washington",
+            "name": "The Kennedy Center"
+        },
+        "coordinates": {
+            "latitude": 38.89606527480314,
+            "longitude": -77.05572561831528
+        },
+        "details": "BEETHOVEN Sonata No. 4 in A minor, Op. 23\nPOULENC Sonata for violin and piano\nBRAHMS Sonata No. 1 in G, Op. 78\nBARTÓK Rhapsody No. 1\n"
+    },
+    {
+        "date": "2025.03.04.",
+        "venue": {
+            "country": "US",
+            "city": "New York",
+            "name": "Carnegie Hall"
+        },
+        "coordinates": {
+            "latitude": 40.765337045521946,
+            "longitude": -73.97999870474678
+        },
+        "details": "BEETHOVEN Sonata No. 4 in A minor, Op. 23\nPOULENC Sonata for violin and piano\nBRAHMS Sonata No. 1 in G, Op. 78\nBARTÓK Rhapsody No. 1\n"
+    },
+    {
+        "date": "2025.03.05.",
+        "venue": {
+            "country": "MA",
+            "city": "Boston",
+            "name": "Symphony Hall"
+        },
+        "coordinates": {
+            "latitude": 42.34296618072063,
+            "longitude": -71.08559597215569
+        },
+        "details": "BEETHOVEN Sonata No. 4 in A minor, Op. 23\nPOULENC Sonata for violin and piano\nBRAHMS Sonata No. 1 in G, Op. 78\nBARTÓK Rhapsody No. 1\n"
+    },
+    {
+        "date": "2025.03.07.",
+        "venue": {
+            "country": "MO",
+            "city": "Kansas City",
+            "name": "Folly Theater"
+        },
+        "coordinates": {
+            "latitude": 39.10044511986952,
+            "longitude": -94.58723463947223
+        },
+        "details": "BEETHOVEN Sonata No. 4 in A minor, Op. 23\nPOULENC Sonata for violin and piano\nBRAHMS Sonata No. 1 in G, Op. 78\nBARTÓK Rhapsody No. 1\n"
+    },
+    {
+        "date": "2025.03.09.",
+        "venue": {
+            "country": "Illinois",
+            "city": "Chicago",
+            "name": "Symphony Center"
+        },
+        "coordinates": {
+            "latitude": 41.87915195017482,
+            "longitude": -87.62473532032922
+        },
+        "details": "BEETHOVEN Sonata No. 4 in A minor, Op. 23\nPOULENC Sonata for violin and piano\nBRAHMS Sonata No. 1 in G, Op. 78\nBARTÓK Rhapsody No. 1\n"
+    },
+    {
+        "date": "2025.03.14.",
+        "venue": {
+            "country": "Australia",
+            "city": "Adelaide",
+            "name": "Adelaide Festival"
+        },
+        "coordinates": {
+            "latitude": -34.91833536522439,
+            "longitude": 138.59802877433728
+        },
+        "details": "SCHUBERT Schwanengesang\nSCHUBERT Piano Sonata No.21\n"
+    },
+    {
+        "date": "2025.03.16.",
+        "venue": {
+            "country": "Australia",
+            "city": "UKARIA Cultural Centre",
+            "name": "Adelaide Festival"
+        },
+        "coordinates": {
+            "latitude": -35.06821604271399,
+            "longitude": 138.90315190853238
+        },
+        "details": "SCHUBERT Die schöne Müllerin\n"
+    },
+    {
+        "date": "2025.03.26.",
+        "venue": {
+            "country": "Australia",
+            "city": "Sydney",
+            "name": "City Recital Hall"
+        },
+        "coordinates": {
+            "latitude": -33.86656152104631,
+            "longitude": 151.20777780849022
+        },
+        "details": "SCHUBERT Winterreise\n"
+    },
+    {
+        "date": "2025.03.28.",
+        "venue": {
+            "country": "Australia",
+            "city": "Sydney",
+            "name": "Sydney Symphony Orchestra"
+        },
+        "coordinates": {
+            "latitude": -33.86362710777065,
+            "longitude": 151.20913649684115
+        },
+        "details": "RACHMANINOFF Piano Concerto No. 4 in G minor, op. 40\n"
+    },
+    {
+        "date": "2025.03.29.",
+        "venue": {
+            "country": "Australia",
+            "city": "Sydney",
+            "name": "Sydney Symphony Orchestra"
+        },
+        "coordinates": {
+            "latitude": -33.86362710777065,
+            "longitude": 151.20913649684115
+        },
+        "details": "RACHMANINOFF Piano Concerto No. 4 in G minor, op. 40\n"
+    },
+    {
+        "date": "2025.03.30.",
+        "venue": {
+            "country": "Australia",
+            "city": "Sydney",
+            "name": "City Recital Hall"
+        },
+        "coordinates": {
+            "latitude": -33.86656152104631,
+            "longitude": 151.20777780849022
+        },
+        "details": "SCHUBERT Schwanengesang\nSCHUBERT Piano Sonata No.21\n"
+    },
+    {
+        "date": "2025.04.01.",
+        "venue": {
+            "country": "Australia",
+            "city": "Melbourne",
+            "name": "Melbourne Recital Centre"
+        },
+        "coordinates": {
+            "latitude": -37.82363847992168,
+            "longitude": 144.96756038164375
+        },
+        "details": "SCHUBERT Winterreise\n"
+    },
+    {
+        "date": "2025.04.03.",
+        "venue": {
+            "country": "Australia",
+            "city": "Melbourne",
+            "name": "Melbourne Symphony Orchestra"
+        },
+        "coordinates": {
+            "latitude": -37.81999129828773,
+            "longitude": 144.96782599963257
+        },
+        "details": "RACHMANINOFF Piano Concerto No.3\n"
+    },
+    {
+        "date": "2025.04.05.",
+        "venue": {
+            "country": "Australia",
+            "city": "Melbourne",
+            "name": "Melbourne Symphony Orchestra"
+        },
+        "coordinates": {
+            "latitude": -37.81999129828773,
+            "longitude": 144.96782599963257
+        },
+        "details": "RACHMANINOFF Piano Concerto No.3\n"
+    },
+    {
+        "date": "2025.04.07.",
+        "venue": {
+            "country": "Australia",
+            "city": "Melbourne",
+            "name": "Melbourne Symphony Orchestra"
+        },
+        "coordinates": {
+            "latitude": -37.81999129828773,
+            "longitude": 144.96782599963257
+        },
+        "details": "RACHMANINOFF Piano Concerto No.3\n"
+    },
+    {
+        "date": "2025.04.11.",
+        "venue": {
+            "country": "New Zealand",
+            "city": "Wellington",
+            "name": "New Zealand Symphony Orchestra"
+        },
+        "coordinates": {
+            "latitude": -41.28761636051693,
+            "longitude": 174.77566699712006
+        },
+        "details": "RACHMANINOFF Piano Concerto No.3\n"
+    },
+    {
+        "date": "2025.04.12.",
+        "venue": {
+            "country": "New Zealand",
+            "city": "Auckland",
+            "name": "New Zealand Symphony Orchestra"
+        },
+        "coordinates": {
+            "latitude": -36.71655209928445,
+            "longitude": 174.77686158422517
+        },
+        "details": "RACHMANINOFF Piano Concerto No.3\n"
+    },
+    {
+        "date": "2025.04.18.",
+        "venue": {
+            "country": "Singapore",
+            "city": "Singapore City",
+            "name": "Singapore Symphony Orchestra"
+        },
+        "coordinates": {
+            "latitude": 1.2934493573559236,
+            "longitude": 103.85118923521469
+        },
+        "details": "RACHMANINOFF Piano Concerto No. 4 in G minor, op. 40\n"
+    },
+    {
+        "date": "2025.05.01.",
+        "venue": {
+            "country": "Illinois",
+            "city": "Chicago",
+            "name": "Chicago Symphony Orchestra"
+        },
+        "coordinates": {
+            "latitude": 41.87920325291363,
+            "longitude": -87.62505427402064
+        },
+        "details": "BRAHMS Piano Concerto No. 2\n"
+    },
+    {
+        "date": "2025.05.02.",
+        "venue": {
+            "country": "Illinois",
+            "city": "Chicago",
+            "name": "Chicago Symphony Orchestra"
+        },
+        "coordinates": {
+            "latitude": 41.87920325291363,
+            "longitude": -87.62505427402064
+        },
+        "details": "BRAHMS Piano Concerto No. 2\n"
+    },
+    {
+        "date": "2025.05.03.",
+        "venue": {
+            "country": "Illinois",
+            "city": "Chicago",
+            "name": "Chicago Symphony Orchestra"
+        },
+        "coordinates": {
+            "latitude": 41.87920325291363,
+            "longitude": -87.62505427402064
+        },
+        "details": "BRAHMS Piano Concerto No. 2\n"
+    },
+    {
+        "date": "2025.05.04.",
+        "venue": {
+            "country": "Illinois",
+            "city": "Chicago",
+            "name": "Chicago Symphony Orchestra"
+        },
+        "coordinates": {
+            "latitude": 41.87920325291363,
+            "longitude": -87.62505427402064
+        },
+        "details": "BRAHMS Piano Concerto No. 2\n"
+    },
+    {
+        "date": "2025.05.15.",
+        "venue": {
+            "country": "Germany",
+            "city": "Leipzig",
+            "name": "Leipzig Gewandhaus Orchester"
+        },
+        "coordinates": {
+            "latitude": 51.337998741556994,
+            "longitude": 12.380362595721614
+        },
+        "details": "SHOSTAKOVICH Festive Overture, op. 96\nSHOSTAKOVICH 2nd Concerto for Piano and Orchestra in F major, op. 102\nSHOSTAKOVICH 4th Symphony in C minor, op. 43\n"
+    },
+    {
+        "date": "2025.05.18.",
+        "venue": {
+            "country": "Germany",
+            "city": "Leipzig",
+            "name": "Leipzig Gewandhaus Orchester"
+        },
+        "coordinates": {
+            "latitude": 51.337998741556994,
+            "longitude": 12.380362595721614
+        },
+        "details": "SHOSTAKOVICH 1st Sonata for Piano in D major, op. 12\nSHOSTAKOVICH 2nd Sonata for Piano in B minor, op. 61\nSHOSTAKOVICH Unfinished Sonata for Violin and Piano\nSHOSTAKOVICH Sonata for Violin and Piano, op. 134\n"
+    },
+    {
+        "date": "2025.05.20.",
+        "venue": {
+            "country": "Germany",
+            "city": "Leipzig",
+            "name": "Leipzig Gewandhaus Orchester"
+        },
+        "coordinates": {
+            "latitude": 51.337998741556994,
+            "longitude": 12.380362595721614
+        },
+        "details": "SHOSTAKOVICH 1st Trio for piano, violin and cello in C minor, op. 8\nSHOSTAKOVICH Sonata for Cello and Piano in D minor, Op. 40\nSHOSTAKOVICH 2nd Trio for Piano, Violin and Violoncello in E minor, Op. 67\n"
+    },
+    {
+        "date": "2025.05.21.",
+        "venue": {
+            "country": "Germany",
+            "city": "Leipzig",
+            "name": "Leipzig Gewandhaus Orchester"
+        },
+        "coordinates": {
+            "latitude": 51.337998741556994,
+            "longitude": 12.380362595721614
+        },
+        "details": "SHOSTAKOVICH Sonata for viola and piano, op. 147\nSHOSTAKOVICH Quintet for piano, two violins, viola and cello in G minor, op. 57\n"
+    },
+    {
+        "date": "2025.05.23.",
+        "venue": {
+            "country": "Germany",
+            "city": "Frankfurt",
+            "name": "Alte Oper Frankfurt"
+        },
+        "coordinates": {
+            "latitude": 50.11620386383352,
+            "longitude": 8.671905268673996
+        },
+        "details": "TCHAIKOVSKY Piano Sonata in C-sharp Minor, Op. 80\nCHOPIN\nWaltz in E Major, Op. Posth.\nWaltz in F Minor, Op. 70, No. 2\nWaltz in A♭ Major, Op. 64, No. 3\nWaltz in D♭ Major, Op. 64, No. 1\nWaltz in A Minor, Op. 34, No. 2\nWaltz in E Minor, Op. Posth.\nBARBER Sonata in E-flat minor, Op. 26\nTCHAIKOVSKY Concert Suite from the ballet The Sleeping Beauty (arr. Mikhail Pletnev)\n"
+    },
+    {
+        "date": "2025.05.24.",
+        "venue": {
+            "country": "Germany",
+            "city": "Essen",
+            "name": "Philharmonie Essen"
+        },
+        "coordinates": {
+            "latitude": 51.446764689276314,
+            "longitude": 7.010173293435648
+        },
+        "details": "TCHAIKOVSKY Piano Sonata in C-sharp Minor, Op. 80\nCHOPIN\nWaltz in E Major, Op. Posth.\nWaltz in F Minor, Op. 70, No. 2\nWaltz in A♭ Major, Op. 64, No. 3\nWaltz in D♭ Major, Op. 64, No. 1\nWaltz in A Minor, Op. 34, No. 2\nWaltz in E Minor, Op. Posth.\nBARBER Sonata in E-flat minor, Op. 26\nTCHAIKOVSKY Concert Suite from the ballet The Sleeping Beauty (arr. Mikhail Pletnev)\n"
+    },
+    {
+        "date": "2025.05.26.",
+        "venue": {
+            "country": "Germany",
+            "city": "Hamburg",
+            "name": "Laeiszhalle"
+        },
+        "coordinates": {
+            "latitude": 53.556162578451996,
+            "longitude": 9.980868468840608
+        },
+        "details": "TCHAIKOVSKY Piano Sonata in C-sharp Minor, Op. 80\nCHOPIN\nWaltz in E Major, Op. Posth.\nWaltz in F Minor, Op. 70, No. 2\nWaltz in A♭ Major, Op. 64, No. 3\nWaltz in D♭ Major, Op. 64, No. 1\nWaltz in A Minor, Op. 34, No. 2\nWaltz in E Minor, Op. Posth.\nBARBER Sonata in E-flat minor, Op. 26\nTCHAIKOVSKY Concert Suite from the ballet The Sleeping Beauty (arr. Mikhail Pletnev)\n"
+    },
+    {
+        "date": "2025.05.28.",
+        "venue": {
+            "country": "France",
+            "city": "Paris",
+            "name": "Philharmonie de Paris"
+        },
+        "coordinates": {
+            "latitude": 48.891479677578985,
+            "longitude": 2.3942638109463785
+        },
+        "details": "TCHAIKOVSKY Piano Sonata in C-sharp Minor, Op. 80\nCHOPIN\nWaltz in E Major, Op. Posth.\nWaltz in F Minor, Op. 70, No. 2\nWaltz in A♭ Major, Op. 64, No. 3\nWaltz in D♭ Major, Op. 64, No. 1\nWaltz in A Minor, Op. 34, No. 2\nWaltz in E Minor, Op. Posth.\nBARBER Sonata in E-flat minor, Op. 26\nTCHAIKOVSKY Concert Suite from the ballet The Sleeping Beauty (arr. Mikhail Pletnev)\n"
+    },
+    {
+        "date": "2025.05.31.",
+        "venue": {
+            "country": "Germany",
+            "city": "Leipzig",
+            "name": "Leipzig Gewandhaus Orchester"
+        },
+        "coordinates": {
+            "latitude": 51.33798533641247,
+            "longitude": 12.380502070577952
+        },
+        "details": "HOSTAKOVICH 12th Symphony in D minor, op. 112 (“The Year 1917”)\nSHOSTAKOVICH Concerto for Piano, Trumpet and String Orchestra in C minor, op. 35\nSHOSTAKOVICH 9th Symphony in E-flat major, op. 70\n"
+    },
+    {
+        "date": "2025.07.13.",
+        "venue": {
+            "country": "Germany",
+            "city": "Bad Kissingen",
+            "name": "Bavarian Radio Symphony Orchestra"
+        },
+        "coordinates": {
+            "latitude": 50.197555963409684,
+            "longitude": 10.075461897512966
+        },
+        "details": "PROKOFIEV Piano Concerto No. 3 in C major\n"
+    },
+    {
+        "date": "2025.07.22.",
+        "venue": {
+            "country": "Switzerland",
+            "city": "Verbier",
+            "name": "Verbier Festival"
+        },
+        "coordinates": {
+            "latitude": 46.101278895332555,
+            "longitude": 7.218136274337262
+        },
+        "details": "BARTÓK Concerto for Two Pianos, Percussion and Orchestra\nKlaus Mäkelä, conductor\nSergei Babayan, piano\n"
+    },
+    {
+        "date": "2025.07.23.",
+        "venue": {
+            "country": "Switzerland",
+            "city": "Verbier",
+            "name": "Verbier Festival"
+        },
+        "coordinates": {
+            "latitude": 46.101278895332555,
+            "longitude": 7.218136274337262
+        },
+        "details": "TCHAIKOVSKY Piano Sonata in C-sharp Minor, Op. 80\nCHOPIN\nWaltz in E Major, Op. Posth.\nWaltz in F Minor, Op. 70, No. 2\nWaltz in A♭ Major, Op. 64, No. 3\nWaltz in D♭ Major, Op. 64, No. 1\nWaltz in A Minor, Op. 34, No. 2\nWaltz in E Minor, Op. Posth.\nBARBER Sonata in E-flat minor, Op. 26\nTCHAIKOVSKY Concert Suite from the ballet The Sleeping Beauty (arr. Mikhail Pletnev)\n"
+    },
+    {
+        "date": "2025.07.25.",
+        "venue": {
+            "country": "Switzerland",
+            "city": "Verbier",
+            "name": "Verbier Festival"
+        },
+        "coordinates": {
+            "latitude": 46.101278895332555,
+            "longitude": 7.218136274337262
+        },
+        "details": "RACHMANINOFF Trio élégiaque No. 2 in D minor Op. 9\n"
+    },
+    {
+        "date": "2025.07.31.",
+        "venue": {
+            "country": "Austria",
+            "city": "Salzburg",
+            "name": "Salzburg Festival"
+        },
+        "coordinates": {
+            "latitude": 47.80282604527426,
+            "longitude": 13.038671229179187
+        },
+        "details": "TCHAIKOVSKY Piano Sonata in C-sharp Minor, Op. 80\nCHOPIN\nWaltz in E Major, Op. Posth.\nWaltz in F Minor, Op. 70, No. 2\nWaltz in A♭ Major, Op. 64, No. 3\nWaltz in D♭ Major, Op. 64, No. 1\nWaltz in A Minor, Op. 34, No. 2\nWaltz in E Minor, Op. Posth.\nGINASTERA Sonata for Piano No. 2 op. 53\nTCHAIKOVSKY Concert Suite from the ballet The Sleeping Beauty (arr. Mikhail Pletnev)"
+    }
+]

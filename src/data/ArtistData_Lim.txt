@@ -1,0 +1,103 @@
+2025.01.16.
+Switzerland, Lucerne, KKL Luzern, Konzertsaal
+(47.05060464325027, 8.311582610862107)
+
+2025.01.23.
+Austria, Wien, ORF Vienna
+(48.20096947835735, 16.372256951600196)
+
+2025.01.31.
+Germany, Cologne, WDR, Philharmonie
+(50.94086700579213, 6.960498398281729)
+
+2025.02.01.
+Germany, Cologne, WDR, Philharmonie
+(50.94086700579213, 6.960498398281729)
+
+2025.02.20.
+USA, Costa Mesa, Renée & Henry Segerstrom Concert Hall
+(33.69225632136119, -117.88254067617538)
+
+2025.02.21.
+USA, San Diego, Jacobs Music Center
+(32.7185182133028, -117.15817630504318)
+
+2025.02.25.
+USA, San Francisco, California, Herbst Theatre
+(37.779855844851156, -122.42061493185271)
+
+2025.02.28.
+USA, La Jolla, CA, La Jolla Music Society, The Baker-Baum Concert Hall
+(32.84223359621512, -117.27449953018294)
+
+2025.03.02.
+Canada, Vancouver, Orpheum Theatre
+(49.28030454157634, -123.12053441971632)
+
+2025.03.06.
+USA, New York, Carnegie Hall, NY
+(40.76530454185239, -73.97997724707658)
+
+2025.04.03.
+France, Paris, Grande Salle Pierre Boulez - Philharmonie
+(48.89146556943038, 2.3941994379357623)
+
+2025.04.05.
+Austria, Vienna, Wiener Konzerthaus
+(48.20106319678317, 16.37740469926554)
+
+2025.04.23.
+United States, Michigan, Hill Auditorium, Ann Arbour
+(42.2793548590673, -83.73899227215841)
+
+2025.04.25.
+USA, New York, Carnegie Hall, NY
+(40.765345171436856, -73.97994506057127)
+
+2025.04.27.
+USA, Washington D.C, Washington Kennedy Center Concert Hall
+(38.89608197501249, -77.05565051646956)
+
+2025.05.18.
+Germany, Berlin, Philharmonie
+(52.51020817660272, 13.369489149757232)
+
+2025.05.20.
+UK, London, Royal Albert Hall
+(51.50113584786798, -0.1774196466003247)
+
+2025.06.04.
+France, Paris, Grande salle Pierre Boulez - Philharmonie
+(48.89148673165178, 2.3941887091006593)
+
+2025.06.05.
+France, Paris, Grande Salle Pierre Boulez - Philharmonie
+(48.89148673165178, 2.3941887091006593)
+
+2025.06.28.
+Japan, Nagoya, Aichi Prefectural Arts Theater Concert Hall
+(35.17181937271991, 136.91154307279808)
+
+2025.07.02.
+Japan, Tokyo, Suntory Hall
+(35.66714166614348, 139.7408805545748)
+
+2025.07.06.
+Japan, Yokohama, Yokohama Minato Mirai Hall (Kanagawa)
+(35.45766193337959, 139.63482488155674)
+
+2025.07.15.
+South Korea, Seoul, Seoul Arts Center
+(37.479571, 127.012797)
+
+2025.07.20.
+Switzerland, Verbier, Verbier Festival
+(46.10026759869036, 7.217693974337262)
+
+2025.07.22.
+Switzerland, Verbier, Verbier Festival
+(46.10026759869036, 7.217693974337262)
+
+2025.07.25.
+Switzerland, Verbier, Verbier Festival
+(46.10026759869036, 7.217693974337262)

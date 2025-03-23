@@ -1,0 +1,340 @@
+[
+    {
+        "date": "2025.02.06.",
+        "venue": {
+            "country": "Japan",
+            "city": "Tokyo",
+            "name": "Suntory Hall"
+        },
+        "coordinates": {
+            "latitude": 35.66717653133529,
+            "longitude": 139.7408805545748
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.02.10.",
+        "venue": {
+            "country": "Japan",
+            "city": "Osaka",
+            "name": "Symphony Hall"
+        },
+        "coordinates": {
+            "latitude": 34.701771610074466,
+            "longitude": 135.48598792570522
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.02.28.",
+        "venue": {
+            "country": "MA",
+            "city": "Boston",
+            "name": "Symphony Hall"
+        },
+        "coordinates": {
+            "latitude": 42.34301376048428,
+            "longitude": -71.08572471817692
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.03.05.",
+        "venue": {
+            "country": "FL",
+            "city": "Orlando, Dr",
+            "name": "Phillips Center"
+        },
+        "coordinates": {
+            "latitude": 28.538063356217528,
+            "longitude": -81.37742626099903
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.03.08.",
+        "venue": {
+            "country": "NY",
+            "city": "New York",
+            "name": "Carnegie Hall"
+        },
+        "coordinates": {
+            "latitude": 40.76530454185239,
+            "longitude": -73.97996651824147
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.03.12.",
+        "venue": {
+            "country": "NY",
+            "city": "New York",
+            "name": "Carnegie Hall"
+        },
+        "coordinates": {
+            "latitude": 40.76530454185239,
+            "longitude": -73.97996651824147
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.03.15.",
+        "venue": {
+            "country": "NC",
+            "city": "Breensboro",
+            "name": "UNCG Auditorium"
+        },
+        "coordinates": {
+            "latitude": 36.0670308487481,
+            "longitude": -79.80568472453321
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.03.19.",
+        "venue": {
+            "country": "PA",
+            "city": "Pittsburgh",
+            "name": "Heinz Hall"
+        },
+        "coordinates": {
+            "latitude": 40.44274054148648,
+            "longitude": -80.00197873174912
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.03.23.",
+        "venue": {
+            "country": "PA",
+            "city": "Philadelphia",
+            "name": "Kimmel Center"
+        },
+        "coordinates": {
+            "latitude": 39.946916848893174,
+            "longitude": -75.16535064710932
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.03.28.",
+        "venue": {
+            "country": "IN",
+            "city": "Carmel",
+            "name": "The Palladium"
+        },
+        "coordinates": {
+            "latitude": 39.969775337020536,
+            "longitude": -86.13031065108714
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.04.05.",
+        "venue": {
+            "country": "France",
+            "city": "Paris",
+            "name": "Philharmonie de Paris"
+        },
+        "coordinates": {
+            "latitude": 48.891514947933075,
+            "longitude": 2.39423162444107
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.04.10.",
+        "venue": {
+            "country": "Luxembourg",
+            "city": "Luxembourg City",
+            "name": "Philharmonie Luxembourg"
+        },
+        "coordinates": {
+            "latitude": 49.61866698427881,
+            "longitude": 6.1425878858366705
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.04.17.",
+        "venue": {
+            "country": "UK",
+            "city": "London",
+            "name": "Barbican Centre"
+        },
+        "coordinates": {
+            "latitude": 51.520448003422906,
+            "longitude": -0.09382931776425485
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.04.21.",
+        "venue": {
+            "country": "UK",
+            "city": "Clasgow",
+            "name": "Royal Concert Hall"
+        },
+        "coordinates": {
+            "latitude": 55.86440838373877,
+            "longitude": -4.2515389850220755
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.04.29.",
+        "venue": {
+            "country": "Spain",
+            "city": "Madrid",
+            "name": "Auditorio Nacional de Música"
+        },
+        "coordinates": {
+            "latitude": 40.44618116787669,
+            "longitude": -3.6775207992224628
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.06.18.",
+        "venue": {
+            "country": "Australia",
+            "city": "Sydney",
+            "name": "Sydney Opera House"
+        },
+        "coordinates": {
+            "latitude": -33.856534904725976,
+            "longitude": 151.21529669684097
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.06.22.",
+        "venue": {
+            "country": "Australia",
+            "city": "Sydney",
+            "name": "Sydney Opera House"
+        },
+        "coordinates": {
+            "latitude": -33.856534904725976,
+            "longitude": 151.21529669684097
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.06.25.",
+        "venue": {
+            "country": "Australia",
+            "city": "Melbourne",
+            "name": "Arts Centre Melbourne"
+        },
+        "coordinates": {
+            "latitude": -37.821233172111555,
+            "longitude": 144.9689071699947
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.06.28.",
+        "venue": {
+            "country": "Australia",
+            "city": "Melbourne",
+            "name": "Arts Centre Melbourne"
+        },
+        "coordinates": {
+            "latitude": -37.821233172111555,
+            "longitude": 144.9689071699947
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.08.17.",
+        "venue": {
+            "country": "Switzerland",
+            "city": "Lucerne, KKL Luzern",
+            "name": "Konzertsaal"
+        },
+        "coordinates": {
+            "latitude": 47.05064850392446,
+            "longitude": 8.311722085718442
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.08.20.",
+        "venue": {
+            "country": "Switzerland",
+            "city": "Lucerne, KKL Luzern",
+            "name": "Konzertsaal"
+        },
+        "coordinates": {
+            "latitude": 47.05064850392446,
+            "longitude": 8.311722085718442
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.10.03.",
+        "venue": {
+            "country": "UK",
+            "city": "Liverpool",
+            "name": "Liverpool Philharmonic Hall"
+        },
+        "coordinates": {
+            "latitude": 53.40148301858828,
+            "longitude": -2.9702224065980505
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.10.06.",
+        "venue": {
+            "country": "UK",
+            "city": "London",
+            "name": "Barbican Centre"
+        },
+        "coordinates": {
+            "latitude": 51.52037456889985,
+            "longitude": -0.09376494475363856
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.10.10.",
+        "venue": {
+            "country": "UK",
+            "city": "Edinburgh",
+            "name": "Usher Hall"
+        },
+        "coordinates": {
+            "latitude": 55.94722341153651,
+            "longitude": -3.205341786863568
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.10.17.",
+        "venue": {
+            "country": "Germany",
+            "city": "Bremen",
+            "name": "Die Glocke"
+        },
+        "coordinates": {
+            "latitude": 53.07497378354366,
+            "longitude": 8.809397626487034
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.10.21.",
+        "venue": {
+            "country": "Germany",
+            "city": "Düsseldorf",
+            "name": "Tonhalle Düsseldorf"
+        },
+        "coordinates": {
+            "latitude": 51.23219404231491,
+            "longitude": 6.772648955232429
+        },
+        "details": ""
+    }
+]

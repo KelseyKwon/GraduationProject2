@@ -1,0 +1,340 @@
+[
+    {
+        "date": "2025.01.16.",
+        "venue": {
+            "country": "Switzerland",
+            "city": "Lucerne, KKL Luzern",
+            "name": "Konzertsaal"
+        },
+        "coordinates": {
+            "latitude": 47.05060464325027,
+            "longitude": 8.311582610862107
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.01.23.",
+        "venue": {
+            "country": "Austria",
+            "city": "Wien",
+            "name": "ORF Vienna"
+        },
+        "coordinates": {
+            "latitude": 48.20096947835735,
+            "longitude": 16.372256951600196
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.01.31.",
+        "venue": {
+            "country": "Germany",
+            "city": "Cologne, WDR",
+            "name": "Philharmonie"
+        },
+        "coordinates": {
+            "latitude": 50.94086700579213,
+            "longitude": 6.960498398281729
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.02.01.",
+        "venue": {
+            "country": "Germany",
+            "city": "Cologne, WDR",
+            "name": "Philharmonie"
+        },
+        "coordinates": {
+            "latitude": 50.94086700579213,
+            "longitude": 6.960498398281729
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.02.20.",
+        "venue": {
+            "country": "USA",
+            "city": "Costa Mesa",
+            "name": "Renée & Henry Segerstrom Concert Hall"
+        },
+        "coordinates": {
+            "latitude": 33.69225632136119,
+            "longitude": -117.88254067617538
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.02.21.",
+        "venue": {
+            "country": "USA",
+            "city": "San Diego",
+            "name": "Jacobs Music Center"
+        },
+        "coordinates": {
+            "latitude": 32.7185182133028,
+            "longitude": -117.15817630504318
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.02.25.",
+        "venue": {
+            "country": "USA",
+            "city": "San Francisco, California",
+            "name": "Herbst Theatre"
+        },
+        "coordinates": {
+            "latitude": 37.779855844851156,
+            "longitude": -122.42061493185271
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.02.28.",
+        "venue": {
+            "country": "USA",
+            "city": "La Jolla, CA, La Jolla Music Society",
+            "name": "The Baker-Baum Concert Hall"
+        },
+        "coordinates": {
+            "latitude": 32.84223359621512,
+            "longitude": -117.27449953018294
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.03.02.",
+        "venue": {
+            "country": "Canada",
+            "city": "Vancouver",
+            "name": "Orpheum Theatre"
+        },
+        "coordinates": {
+            "latitude": 49.28030454157634,
+            "longitude": -123.12053441971632
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.03.06.",
+        "venue": {
+            "country": "USA",
+            "city": "New York, Carnegie Hall",
+            "name": "NY"
+        },
+        "coordinates": {
+            "latitude": 40.76530454185239,
+            "longitude": -73.97997724707658
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.04.03.",
+        "venue": {
+            "country": "France",
+            "city": "Paris",
+            "name": "Grande Salle Pierre Boulez - Philharmonie"
+        },
+        "coordinates": {
+            "latitude": 48.89146556943038,
+            "longitude": 2.3941994379357623
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.04.05.",
+        "venue": {
+            "country": "Austria",
+            "city": "Vienna",
+            "name": "Wiener Konzerthaus"
+        },
+        "coordinates": {
+            "latitude": 48.20106319678317,
+            "longitude": 16.37740469926554
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.04.23.",
+        "venue": {
+            "country": "United States",
+            "city": "Michigan, Hill Auditorium",
+            "name": "Ann Arbour"
+        },
+        "coordinates": {
+            "latitude": 42.2793548590673,
+            "longitude": -83.73899227215841
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.04.25.",
+        "venue": {
+            "country": "USA",
+            "city": "New York, Carnegie Hall",
+            "name": "NY"
+        },
+        "coordinates": {
+            "latitude": 40.765345171436856,
+            "longitude": -73.97994506057127
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.04.27.",
+        "venue": {
+            "country": "USA",
+            "city": "Washington D.C",
+            "name": "Washington Kennedy Center Concert Hall"
+        },
+        "coordinates": {
+            "latitude": 38.89608197501249,
+            "longitude": -77.05565051646956
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.05.18.",
+        "venue": {
+            "country": "Germany",
+            "city": "Berlin",
+            "name": "Philharmonie"
+        },
+        "coordinates": {
+            "latitude": 52.51020817660272,
+            "longitude": 13.369489149757232
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.05.20.",
+        "venue": {
+            "country": "UK",
+            "city": "London",
+            "name": "Royal Albert Hall"
+        },
+        "coordinates": {
+            "latitude": 51.50113584786798,
+            "longitude": -0.1774196466003247
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.06.04.",
+        "venue": {
+            "country": "France",
+            "city": "Paris",
+            "name": "Grande salle Pierre Boulez - Philharmonie"
+        },
+        "coordinates": {
+            "latitude": 48.89148673165178,
+            "longitude": 2.3941887091006593
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.06.05.",
+        "venue": {
+            "country": "France",
+            "city": "Paris",
+            "name": "Grande Salle Pierre Boulez - Philharmonie"
+        },
+        "coordinates": {
+            "latitude": 48.89148673165178,
+            "longitude": 2.3941887091006593
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.06.28.",
+        "venue": {
+            "country": "Japan",
+            "city": "Nagoya",
+            "name": "Aichi Prefectural Arts Theater Concert Hall"
+        },
+        "coordinates": {
+            "latitude": 35.17181937271991,
+            "longitude": 136.91154307279808
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.07.02.",
+        "venue": {
+            "country": "Japan",
+            "city": "Tokyo",
+            "name": "Suntory Hall"
+        },
+        "coordinates": {
+            "latitude": 35.66714166614348,
+            "longitude": 139.7408805545748
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.07.06.",
+        "venue": {
+            "country": "Japan",
+            "city": "Yokohama",
+            "name": "Yokohama Minato Mirai Hall (Kanagawa)"
+        },
+        "coordinates": {
+            "latitude": 35.45766193337959,
+            "longitude": 139.63482488155674
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.07.15.",
+        "venue": {
+            "country": "South Korea",
+            "city": "Seoul",
+            "name": "Seoul Arts Center"
+        },
+        "coordinates": {
+            "latitude": 37.479571,
+            "longitude": 127.012797
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.07.20.",
+        "venue": {
+            "country": "Switzerland",
+            "city": "Verbier",
+            "name": "Verbier Festival"
+        },
+        "coordinates": {
+            "latitude": 46.10026759869036,
+            "longitude": 7.217693974337262
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.07.22.",
+        "venue": {
+            "country": "Switzerland",
+            "city": "Verbier",
+            "name": "Verbier Festival"
+        },
+        "coordinates": {
+            "latitude": 46.10026759869036,
+            "longitude": 7.217693974337262
+        },
+        "details": ""
+    },
+    {
+        "date": "2025.07.25.",
+        "venue": {
+            "country": "Switzerland",
+            "city": "Verbier",
+            "name": "Verbier Festival"
+        },
+        "coordinates": {
+            "latitude": 46.10026759869036,
+            "longitude": 7.217693974337262
+        },
+        "details": ""
+    }
+]
