@@ -117,7 +117,7 @@ const NearInfo = () => {
       </nav>
 
       {/* 구글 맵 */}
-      <LoadScript googleMapsApiKey="AIzaSyBW5PKkaDcfAHlGWjW94ikbGg6l9rws5nU">
+      <LoadScript googleMapsApiKey="AIzaSyAEvELryy_YAdKvjzbf3bnGQ9IhlJ3xRaY">
         <GoogleMap
           center={{ lat: latitude, lng: longitude }}
           zoom={14}
