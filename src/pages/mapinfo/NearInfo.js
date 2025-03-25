@@ -1,18 +1,18 @@
-// src/pages/mapinfo/NearInfo.js
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import data from "../../data/ArtistData_Cho.json"; // JSON 파일 불러오기
 
 const NearInfo = () => {
   const [latitude, setLatitude] = useState(0);
   const [longitude, setLongitude] = useState(0);
-  const [selectedCategory, setSelectedCategory] = useState(null); // 초기값을 null로 설정
-  const [markers, setMarkers] = useState([]); // 선택된 카테고리의 마커 상태
+  const [selectedCategory, setSelectedCategory] = useState(null); // 카테고리 상태
+  const [markers, setMarkers] = useState([]); // 마커 상태
 
   // 카테고리별 Google Places API 호출
   const fetchPlaces = async (category) => {
     try {
+      if (!latitude || !longitude) return;
+
       const location = { lat: latitude, lng: longitude };
       const placesService = new window.google.maps.places.PlacesService(
         document.createElement("div")
@@ -25,6 +25,9 @@ const NearInfo = () => {
       };
 
       placesService.nearbySearch(request, (results, status) => {
+        console.log("Places API Status: ", status);
+        console.log("Places API Results: ", results);
+
         if (status === window.google.maps.places.PlacesServiceStatus.OK) {
           setMarkers(
             results.map((place) => ({
@@ -34,6 +37,8 @@ const NearInfo = () => {
               longitude: place.geometry.location.lng(),
             }))
           );
+        } else {
+          setMarkers([]); // 결과가 없으면 마커 초기화
         }
       });
     } catch (error) {
@@ -43,72 +48,82 @@ const NearInfo = () => {
 
   // 데이터 로딩 후 첫 번째 위치를 기본으로 설정
   useEffect(() => {
-    const currentData = data[0]; // 첫 번째 데이터 선택
-    setLatitude(currentData?.coordinates.latitude || 0);
-    setLongitude(currentData?.coordinates.longitude || 0);
+    if (data.length > 0) {
+      const currentData = data[0]; // 첫 번째 데이터 선택
+      console.log("Loaded Data: ", currentData);
+      setLatitude(currentData?.coordinates.latitude || 0);
+      setLongitude(currentData?.coordinates.longitude || 0);
+    }
   }, []);
 
+  // 선택된 카테고리 변경 시 마커 업데이트
   useEffect(() => {
+    console.log("Selected Category: ", selectedCategory);
     if (selectedCategory) {
-      fetchPlaces(selectedCategory); // 카테고리 변경 시 마커를 업데이트
+      fetchPlaces(selectedCategory);
     }
-  }, [selectedCategory, latitude, longitude]); // latitude와 longitude가 변경될 때도 마커를 업데이트
-
+  }, [selectedCategory, latitude, longitude]);
 
   return (
     <div>
       <h3>Near Info Page</h3>
-      {/* 네비게이션 메뉴 */}
+
+      {/* 카테고리 버튼 */}
       <nav>
-        <ul>
+        <ul style={{ listStyle: "none", padding: 0, display: "flex", gap: "10px" }}>
           <li>
-            <NavLink
-              to="#"
+            <button
               onClick={() => setSelectedCategory("restaurant")}
-              style={({ isActive }) => ({
-                textDecoration: isActive ? "underline" : "none",
-                color: isActive ? "blue" : "black",
-              })}
+              style={{
+                backgroundColor: selectedCategory === "restaurant" ? "blue" : "white",
+                color: selectedCategory === "restaurant" ? "white" : "black",
+                padding: "10px",
+                border: "1px solid black",
+                cursor: "pointer",
+              }}
             >
               Restaurants
-            </NavLink>
+            </button>
           </li>
           <li>
-            <NavLink
-              to="#"
+            <button
               onClick={() => setSelectedCategory("cafe")}
-              style={({ isActive }) => ({
-                textDecoration: isActive ? "underline" : "none",
-                color: isActive ? "blue" : "black",
-              })}
+              style={{
+                backgroundColor: selectedCategory === "cafe" ? "blue" : "white",
+                color: selectedCategory === "cafe" ? "white" : "black",
+                padding: "10px",
+                border: "1px solid black",
+                cursor: "pointer",
+              }}
             >
               Cafes
-            </NavLink>
+            </button>
           </li>
           <li>
-            <NavLink
-              to="#"
+            <button
               onClick={() => setSelectedCategory("tourist_attraction")}
-              style={({ isActive }) => ({
-                textDecoration: isActive ? "underline" : "none",
-                color: isActive ? "blue" : "black",
-              })}
+              style={{
+                backgroundColor: selectedCategory === "tourist_attraction" ? "blue" : "white",
+                color: selectedCategory === "tourist_attraction" ? "white" : "black",
+                padding: "10px",
+                border: "1px solid black",
+                cursor: "pointer",
+              }}
             >
               Popular Attractions
-            </NavLink>
+            </button>
           </li>
         </ul>
       </nav>
 
-      {/* 구글 맵 로드 */}
+      {/* 구글 맵 */}
       <LoadScript googleMapsApiKey="AIzaSyBW5PKkaDcfAHlGWjW94ikbGg6l9rws5nU">
         <GoogleMap
           center={{ lat: latitude, lng: longitude }}
           zoom={14}
-          mapContainerStyle={{ height: "400px", width: "300%", marginLeft: "-400px",}}
-          
+          mapContainerStyle={{ height: "400px", width: "100%" }}
         >
-          {/* 선택된 카테고리의 마커들 렌더링 */}
+          {/* 마커 표시 */}
           {markers.map((marker) => (
             <Marker
               key={marker.id}
