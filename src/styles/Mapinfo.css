@@ -1,0 +1,101 @@
+/* 전체 배경 */
+.mapinfo-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100vw; /* 전체 화면 너비 */
+  height: 100vh; /* 전체 화면 높이 */
+  background-image: url("../img/mapinfobackgroud.png"); /* 공통 배경 */
+  background-size: cover; /* 화면을 가득 채우도록 설정 */
+  background-position: center center; /* 이미지 중앙 정렬 */
+  background-repeat: no-repeat; /* 이미지 반복 방지 */
+  background-attachment: fixed; /* 스크롤해도 고정된 배경 유지 */
+  position: relative; /* 요소 배치 조정 */
+  overflow: hidden; /* 배경이 잘리지 않도록 */
+}
+
+/* Info Card Container */
+.info-card-container {
+  position: absolute;
+  top: calc(10vh + 100px); /* Sidebar2 바로 아래 배치 */
+  right: 0; /* Sidebar2 기준으로 정렬 */
+  width: var(--sidebar-width); /* Sidebar2와 같은 너비 */
+  display: flex;
+  justify-content: center; /* 중앙 정렬 */
+  align-items: center;
+}
+
+/* Info Card */
+.info-card {
+  width: 90%; /* Sidebar2 너비의 90%만큼 차지 */
+  max-width: 644px; /* 최대 크기 제한 */
+  background: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sidebar2 너비 변수 설정 */
+:root {
+  --sidebar-width: 40vw;
+}
+
+/* 반응형에서 Sidebar2 너비 조절 */
+@media screen and (max-width: 1024px) {
+  :root {
+    --sidebar-width: 50vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --sidebar-width: 90vw;
+  }
+}
+
+/* Info Card 이미지 */
+.info-image {
+  width: 100%;
+  height: 357px;
+  object-fit: cover;
+}
+
+/* Info Card 상세 정보 */
+.info-details {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-title {
+  font-size: 23px;
+  font-weight: 700;
+  font-family: Pretendard, sans-serif;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.info-description {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Pretendard, sans-serif;
+  color: black;
+  line-height: 25.6px;
+}
+
+.info-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 6px 12px;
+  background: rgba(180, 80, 197, 0.1);
+  border-radius: 15px;
+  font-size: 14px;
+  color: black;
+}

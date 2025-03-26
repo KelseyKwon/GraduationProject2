@@ -1,0 +1,52 @@
+/* Sidebar2 컨테이너 */
+.sidebar2-container {
+  width: 35vw;
+  height: 10vh;
+  background: rgba(255, 255, 255, 0.8) !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: center;
+  box-sizing: border-box; /* 패딩이 컨테이너 크기에 포함되도록 */
+  position: fixed;
+  top: 10px; /* 화면 상단에서 약간 띄우기 */
+  right: 30px;
+  z-index: 100;
+  border-radius: 12px !important; /* 모서리 둥글게 */
+  backdrop-filter: blur(8px) !important; /* 배경 블러 효과 추가 */
+}
+
+.sidebar2-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px; /* 버튼 사이 간격 */
+  width: 100%;
+  padding: 10px 20px; /* 내부 패딩 증가 */
+}
+
+/* 개별 탭 버튼 */
+.sidebar2-tab {
+  padding: 15px 25px;
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: 25px;
+  font-size: 18px;
+  font-family: "Pretendard", sans-serif;
+  font-weight: 200;
+  color: black;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  border: none;
+  outline: none;
+}
+
+/* 활성 탭 */
+.sidebar2-tab.active {
+  background: rgba(180, 80, 197, 0.3);
+  font-weight: 500;
+}
+
+/* 탭 Hover 효과 */
+.sidebar2-tab:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
