@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: 100vh; /* 화면 전체 사용 */
   background-size: cover;
   background-position: center;
   position: relative;
@@ -16,9 +16,10 @@
   justify-content: flex-start;
   align-items: flex-end; /* 오른쪽 정렬 */
   width: 100%; /* 화면 전체 사용 */
-  height: 100%;
+  height: 100%; /* 화면 전체 사용 */
   position: relative;
   padding-right: 20px; /* 오른쪽 여백 */
+  z-index: 2; /* Sidebar가 맨 위에 오도록 설정 */
 }
 
 /* Sidebar2: 탭 메뉴만 차지 */
@@ -33,18 +34,22 @@
   padding: 10px 20px;
   border-radius: 12px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-  z-index: 1;
+  z-index: 3; /* Sidebar가 탭 메뉴도 포함해서 항상 맨 위에 있게 */
 }
 
 /* Info Card Container */
 .info-card-container {
-  width: 100%; /* Sidebar2 아래쪽에 배치 */
+  position: absolute; /* 지도가 가득 차게 하려면 절대 위치 사용 */
+  z-index: 1; /* Sidebar보다 아래로 배치 */
+  top: 20px; /* 지도에서 일정 간격 */
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
   display: flex;
   justify-content: flex-end; /* 오른쪽에 배치 */
   align-items: center; /* 세로 중앙 정렬 */
-  position: relative;
-  height: calc(100% - 70px); /* Sidebar2 탭 메뉴를 제외한 높이 사용 */
-  padding-top: 20px;
+  overflow: hidden;
+  pointer-events: none; /* 클릭 방지 */
 }
 
 /* Info Card */
@@ -57,7 +62,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  z-index: 2; /* Sidebar2 위에 표시 */
+  z-index: 2; /* Info 카드가 Sidebar 위에 표시 */
   margin-right: 200px;
 }
 
@@ -105,4 +110,10 @@
   border-radius: 15px;
   font-size: 14px;
   color: black;
+}
+
+/* Google Map 스타일 */
+.map-container {
+  width: 100%;
+  height: 100%; /* 지도 컨테이너가 전체 화면을 차지하도록 설정 */
 }

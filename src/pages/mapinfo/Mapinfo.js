@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { useLocation } from "react-router-dom";
+import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import Header from "../../component/Header";
 import Sidebar2 from "../../component/Sidebar2";
 import "../../styles/Mapinfo.css";
-import backgroundImage from "../../img/mapinfobackgroud.png";
 import concertImage from "../../img/concert.png";
 import ConcertInfo from "./ConcertInfo";
 import NearInfo from "./NearInfo";
@@ -11,6 +11,15 @@ import AccompanyInfo from "./AccompanyInfo";
 
 const Mapinfo = () => {
   const location = useLocation();
+  const mapContainerStyle = {
+    width: '100%',
+    height: '100vh', // This will make the map cover the entire screen
+  };
+
+  const center = {
+    lat: 47.050169, // Use the latitude of the location you want to show
+    lng: 8.309307, // Use the longitude of the location you want to show
+  };
 
   const renderContent = () => {
     if (location.pathname.includes("basic")) {
@@ -44,17 +53,25 @@ const Mapinfo = () => {
   };
 
   return (
-    <div
-      className="mapinfo-wrapper"
-      style={{ backgroundImage: `url(${backgroundImage})` }}
-    >
-      {/* 헤더 */}
+    <div className="mapinfo-wrapper">
+      {/* Header */}
       <Header title="임윤찬 맵" />
 
-      {/* 사이드바 + 콘텐츠 */}
+      {/* Sidebar + Content */}
       <div className="sidebar2-wrapper">
-        {/* Sidebar2 탭 메뉴 */}
+        {/* Sidebar2 tab menu */}
         <Sidebar2 />
+
+        {/* Google Map as background */}
+        <LoadScript googleMapsApiKey="AIzaSyAEvELryy_YAdKvjzbf3bnGQ9IhlJ3xRaY">
+          <GoogleMap
+            mapContainerStyle={{ width: '100%', height: '100%' }}
+            center={center}
+            zoom={15}
+          >
+            <Marker position={center} />
+          </GoogleMap>
+        </LoadScript>
 
         {/* Info Card */}
         <div className="info-card-container">{renderContent()}</div>
