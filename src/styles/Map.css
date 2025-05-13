@@ -30,6 +30,7 @@ html {
   height: 100%;
   width: 100%;
   z-index: 0; /* 사이드바보다 아래로 배치 */
+  /*
   pointer-events: none; /* 지도 자체는 클릭 불가능하게 설정 */
 }
 
