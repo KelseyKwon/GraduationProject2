@@ -8,6 +8,7 @@ import concertImage from "../../img/concert.png";
 import ConcertInfo from "./ConcertInfo";
 import NearInfo from "./NearInfo";
 import AccompanyInfo from "./AccompanyInfo";
+import ArtistPathTracker from "../../component/ArtistPathTracker";
 
 const Mapinfo = () => {
   const location = useLocation();
@@ -70,6 +71,8 @@ const Mapinfo = () => {
             zoom={15}
           >
             <Marker position={center} />
+
+            <ArtistPathTracker />
           </GoogleMap>
         </LoadScript>
 

@@ -5,68 +5,69 @@ html {
   padding: 0;
   width: 100vw;
   height: 100vh;
-  overflow: hidden; /* 스크롤 제거 */
+  overflow: hidden;
 }
 
+/* 맵 + 사이드바를 감싸는 컨테이너 */
 .map-container {
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  position: relative; /* 헤더와 지도 내용 겹치기 가능 */
-}
-
-/* 지도와 사이드바를 포함한 콘텐츠 */
-.map-content {
-  display: flex;
-  width: 100%;
-  height: 100%;
   position: relative;
 }
 
-/* Google Maps가 배경이 되도록 설정 */
-.map-background {
-  flex: 1;
-  height: 100%;
+/* 헤더 아래 지도가 차지할 영역 */
+.map-content {
+  display: flex;
+  flex-wrap: nowrap; /* 한 줄로만 배치 */
   width: 100%;
-  z-index: 0; /* 사이드바보다 아래로 배치 */
-  /*
-  pointer-events: none; /* 지도 자체는 클릭 불가능하게 설정 */
+  height: 100%;
 }
 
-/* Google Maps 내부 요소는 클릭 가능하도록 */
+/* 지도 영역: 남은 공간 전부 차지, 축소 가능하도록 설정 */
+.map-background {
+  flex: 1 1 0; /* grow:1, shrink:1, basis:0 */
+  min-width: 0; /* 자식(iframe)이 줄어들 틈 허용 */
+  height: 100%;
+}
+
 .map-background iframe {
-  pointer-events: auto; /* Google Maps 내부는 클릭 가능하게 변경 */
+  pointer-events: auto;
 }
 
-/* 🔹 사이드바: 오른쪽에 배치 */
+/* 사이드바: flex 아이템으로 고정 너비 */
 .map-sidebar {
-  width: 370px;
+  flex: 0 0 370px; /* 고정 폭 370px */
   height: 100%;
   background: white;
   box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  display: flex;
-  flex-direction: column;
   overflow-y: auto;
-  position: absolute;
-  right: 0; /* 오른쪽에 고정 */
-  top: 0;
-  z-index: 3; /* 지도보다 위에 배치 */
+  z-index: 3;
 }
 
-/* 이벤트 리스트 */
-.map-event {
-  margin-top: 20px;
+/* 마커 인포윈도우 스타일 */
+.gm-style .gm-style-iw-c {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  background: white;
 }
 
-.event-name {
-  font-size: 14px;
-  color: #333333;
+/* 폴리라인 애니메이션 효과 */
+.polyline-path {
+  stroke: #8a2be2;
+  stroke-opacity: 0.8;
+  stroke-width: 4;
+  stroke-dasharray: 6;
+  animation: dashmove 4s linear infinite;
 }
 
-.event-date {
-  font-size: 12px;
-  color: #9e9e9e;
-  margin-top: 5px;
+@keyframes dashmove {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 100;
+  }
 }
