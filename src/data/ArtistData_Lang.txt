@@ -1,0 +1,103 @@
+2025.02.06.
+Japan, Tokyo, Suntory Hall
+(35.66717653133529, 139.7408805545748)
+
+2025.02.10.
+Japan, Osaka, Symphony Hall
+(34.701771610074466, 135.48598792570522)
+
+2025.02.28.
+MA, Boston, Symphony Hall
+(42.34301376048428, -71.08572471817692)
+
+2025.03.05.
+FL, Orlando, Dr, Phillips Center
+(28.538063356217528, -81.37742626099903)
+
+2025.03.08.
+NY, New York, Carnegie Hall
+(40.76530454185239, -73.97996651824147)
+
+2025.03.12.
+NY, New York, Carnegie Hall
+(40.76530454185239, -73.97996651824147)
+
+2025.03.15.
+NC, Breensboro, UNCG Auditorium
+(36.0670308487481, -79.80568472453321)
+
+2025.03.19.
+PA, Pittsburgh, Heinz Hall
+(40.44274054148648, -80.00197873174912)
+
+2025.03.23.
+PA, Philadelphia, Kimmel Center
+(39.946916848893174, -75.16535064710932)
+
+2025.03.28.
+IN, Carmel, The Palladium
+(39.969775337020536, -86.13031065108714)
+
+2025.04.05.
+France, Paris, Philharmonie de Paris
+(48.891514947933075, 2.39423162444107)
+
+2025.04.10.
+Luxembourg, Luxembourg City, Philharmonie Luxembourg
+(49.61866698427881, 6.1425878858366705)
+
+2025.04.17.
+UK, London, Barbican Centre
+(51.520448003422906, -0.09382931776425485)
+
+2025.04.21.
+UK, Clasgow, Royal Concert Hall
+(55.86440838373877, -4.2515389850220755)
+
+2025.04.29.
+Spain, Madrid, Auditorio Nacional de Música
+(40.44618116787669, -3.6775207992224628)
+
+2025.06.18.
+Australia, Sydney, Sydney Opera House
+(-33.856534904725976, 151.21529669684097)
+
+2025.06.22.
+Australia, Sydney, Sydney Opera House
+(-33.856534904725976, 151.21529669684097)
+
+2025.06.25.
+Australia, Melbourne, Arts Centre Melbourne
+(-37.821233172111555, 144.9689071699947)
+
+2025.06.28.
+Australia, Melbourne, Arts Centre Melbourne
+(-37.821233172111555, 144.9689071699947)
+
+2025.08.17.
+Switzerland, Lucerne, KKL Luzern, Konzertsaal
+(47.05064850392446, 8.311722085718442)
+
+2025.08.20.
+Switzerland, Lucerne, KKL Luzern, Konzertsaal
+(47.05064850392446, 8.311722085718442)
+
+2025.10.03.
+UK, Liverpool, Liverpool Philharmonic Hall
+(53.40148301858828, -2.9702224065980505)
+
+2025.10.06.
+UK, London, Barbican Centre
+(51.52037456889985, -0.09376494475363856)
+
+2025.10.10.
+UK, Edinburgh, Usher Hall
+(55.94722341153651, -3.205341786863568)
+
+2025.10.17.
+Germany, Bremen, Die Glocke
+(53.07497378354366, 8.809397626487034)
+
+2025.10.21.
+Germany, Düsseldorf, Tonhalle Düsseldorf
+(51.23219404231491, 6.772648955232429)

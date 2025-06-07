@@ -1,0 +1,215 @@
+2025.01.12.
+France, Paris, Philharmonie de Paris
+(48.89137386636755, 2.3943281841405644)
+TCHAIKOVSKY: Piano Concerto No. 1
+
+2025.01.16.
+United States, Philadelphia, PA, Marian Anderson Hall
+(39.948776850283814, -75.16590886891184)
+TCHAIKOVSKY: Piano Concerto No. 1
+
+2025.01.17.
+United States, Philadelphia, PA, Marian Anderson Hall
+(39.948776850283814, -75.16590886891184)
+TCHAIKOVSKY: Piano Concerto No. 1
+
+2025.01.18.
+United States, Philadelphia, PA, Marian Anderson Hall
+(39.948776850283814, -75.16590886891184)
+TCHAIKOVSKY: Piano Concerto No. 1
+
+2025.01.23.
+United States, New York, NY, David Geffen Hall
+(40.77306407096388, -73.98312236039212)
+JANÁČEK: Capriccio for Piano Left Hand and Winds
+STRAVINSKY: Concerto for Piano and Wind Instruments
+GERSHWIN: Rhapsody in Blue (original jazz band version)
+
+2025.01.24.
+United States, New York, NY, David Geffen Hall
+(40.77306407096388, -73.98312236039212)
+JANÁČEK: Capriccio for Piano Left Hand and Winds
+STRAVINSKY: Concerto for Piano and Wind Instruments
+GERSHWIN: Rhapsody in Blue (original jazz band version)
+
+2025.01.25.
+United States, New York, NY, David Geffen Hall
+(40.77306407096388, -73.98312236039212)
+JANÁČEK: Capriccio for Piano Left Hand and Winds
+STRAVINSKY: Concerto for Piano and Wind Instruments
+GERSHWIN: Rhapsody in Blue (original jazz band version)
+
+2025.02.08.
+USA, Newport News, VA, Ferguson Center for the Arts
+(37.062008832377764, -76.49045833355129)
+STRAVINSKY: Movements for Piano and Orchestra
+STRAVINSKY: Concerto for Piano and Wind Instruments
+STRAVINSKY: Capriccio for Piano and Orchestra
+
+2025.02.13.
+United States, San Francisco, CA, Davies Symphony Hall
+(37.77809897130641, -122.42094827770379)
+STRAVINSKY: Concerto for Piano and Wind Instruments
+STRAVINSKY: Capriccio for Piano and Orchestra
+STRAVINSKY: Movements for Piano and Orchestra
+
+2025.02.14.
+United States, San Francisco, CA, Davies Symphony Hall
+(37.77809897130641, -122.42094827770379)
+STRAVINSKY: Concerto for Piano and Wind Instruments
+STRAVINSKY: Capriccio for Piano and Orchestra
+STRAVINSKY: Movements for Piano and Orchestra
+
+2025.02.15.
+United States, San Francisco, CA, Davies Symphony Hall
+(37.77809897130641, -122.42094827770379)
+STRAVINSKY: Concerto for Piano and Wind Instruments
+STRAVINSKY: Capriccio for Piano and Orchestra
+STRAVINSKY: Movements for Piano and Orchestra
+
+2025.02.16.
+United States, San Francisco, CA, Davies Symphony Hall
+(37.77809897130641, -122.42094827770379)
+STRAVINSKY: Concerto for Piano and Wind Instruments
+STRAVINSKY: Capriccio for Piano and Orchestra
+STRAVINSKY: Movements for Piano and Orchestra
+
+2025.02.17.
+Canada, Toronto, Koerner Hall
+(43.668059708693065, -79.3964189658254)
+BERIO: 'Wasserklavier' from Six Encores for Piano
+SCHUBERT: Fantasia in F minor for Piano Four-hands
+LIGETI: 'Bewegung' from Three Pieces for Two Pianos
+BRUBECK: Fugue from Points on Jazz
+NANCARROW/ADÈS: Study No. 6
+ADAMS: Hallelujah Junction
+PÄRT: Hymn to a Great City
+RACHMANINOV: Symphonic Dances for Two Pianos Op. 45
+
+2025.02.18.
+Canada, Toronto, Koerner Hall
+(43.668059708693065, -79.3964189658254)
+BERIO: Wasserklavier
+SCHUBERT: Fantasia in F minor for Four Hands
+LIGETI: “Bewegung” from Three Pieces for Two Pianos
+BRUBECK: Fugue from Points on Jazz
+NANCARROW, arr. Thomas ADÈS: Study No. 6
+John ADAMS: Hallelujah Junction
+Arvo PÄRT: Hymn to a Great City
+RACHMANINOFF: Symphonic Dances
+
+2025.02.19.
+United States, New York, NY, Carnegie Hall
+(40.76523140853768, -73.97996651806416)
+BERIO: Wasserklavier
+SCHUBERT: Fantasia in F minor for Four Hands
+LIGETI: “Bewegung” from Three Pieces for Two Pianos
+BRUBECK: Fugue from Points on Jazz
+NANCARROW, arr. Thomas ADÈS: Study No. 6
+John ADAMS: Hallelujah Junction
+Arvo PÄRT: Hymn to a Great City
+RACHMANINOFF: Symphonic Dances
+
+2025.02.23.
+United States, Cleveland, OH, Severance Hall
+(41.506244695112585, -81.60955210269059)
+BERIO: Wasserklavier
+SCHUBERT: Fantasia in F minor for Four Hands
+LIGETI: “Bewegung” from Three Pieces for Two Pianos
+BRUBECK: Fugue from Points on Jazz
+NANCARROW, arr. Thomas ADÈS: Study No. 6
+John ADAMS: Hallelujah Junction
+Arvo PÄRT: Hymn to a Great City
+RACHMANINOFF: Symphonic Dances
+
+2025.02.26.
+United States, Los Angeles, CA, Walt Disney Concert Hall
+(34.055568755038564, -118.24983966037681)
+BERIO: Wasserklavier
+SCHUBERT: Fantasia in F minor for Four Hands
+LIGETI: “Bewegung” from Three Pieces for Two Pianos
+BRUBECK: Fugue from Points on Jazz
+NANCARROW, arr. Thomas ADÈS: Study No. 6
+John ADAMS: Hallelujah Junction
+Arvo PÄRT: Hymn to a Great City
+RACHMANINOFF: Symphonic Dances
+
+2025.03.02.
+United States, San Francisco, CA, Davies Symphony Hall
+(37.77815833097713, -122.42076588749383)
+BERIO: Wasserklavier
+SCHUBERT: Fantasia in F minor for Four Hands
+LIGETI: “Bewegung” from Three Pieces for Two Pianos
+BRUBECK: Fugue from Points on Jazz
+NANCARROW, arr. Thomas ADÈS: Study No. 6
+John ADAMS: Hallelujah Junction
+Arvo PÄRT: Hymn to a Great City
+RACHMANINOFF: Symphonic Dances
+
+2025.03.13.
+United States, New York, NY, David Geffen Hall
+(40.77312907069647, -73.98318673340741)
+RAVEL: Piano Concerto for the Left Hand
+RAVEL: Piano Concerto in G major
+
+2025.03.14.
+United States, New York, NY, David Geffen Hall
+(40.77312907069647, -73.98318673340741)
+RAVEL: Piano Concerto for the Left Hand
+RAVEL: Piano Concerto in G major
+
+2025.03.15.
+United States, New York, NY, David Geffen Hall
+(40.77312907069647, -73.98318673340741)
+RAVEL: Piano Concerto for the Left Hand
+RAVEL: Piano Concerto in G major
+
+2025.03.16.
+United States, New York, NY, David Geffen Hall
+(40.77312907069647, -73.98318673340741)
+RAVEL: Piano Concerto for the Left Hand
+RAVEL: Piano Concerto in G major
+
+2025.04.16.
+Canada, Toronto, Roy Thomson Hall
+(43.64676204090084, -79.38648200445215)
+TCHAIKOVSKY: Piano Concerto No. 1
+
+2025.04.17.
+Canada, Toronto, Roy Thomson Hall
+(43.64676204090084, -79.38648200445215)
+TCHAIKOVSKY: Piano Concerto No. 1
+
+2025.04.19.
+Canada, Toronto, Roy Thomson Hall
+(43.64676204090084, -79.38648200445215)
+TCHAIKOVSKY: Piano Concerto No. 1
+
+2025.04.26.
+United States, Philadelphia, PA, Marian Anderson Hall
+(39.949961229552365, -75.1667671757822)
+BERNSTEIN: Symphony No. 2: The Age of Anxiety
+
+2025.05.02.
+Austria, Vienna, Musikverein
+(48.23884532636098, 16.369043765646808)
+TCHAIKOVSKY: Concerto for Piano No. 1
+
+2025.05.03.
+Austria, Vienna, Musikverein
+(48.23884532636098, 16.369043765646808)
+TCHAIKOVSKY: Piano Concerto No. 1 in B-flat minor Op. 23
+
+2025.05.04.
+Austria, Vienna, Musikverein
+(48.23884532636098, 16.369043765646808)
+TCHAIKOVSKY: Piano Concerto No. 1 in B-flat minor Op. 23
+
+2025.05.06.
+Austria, Vienna, Wiener Konzerthaus
+(48.20107034775163, 16.377286682257466)
+TCHAIKOVSKY: Piano Concerto No. 1 in B-flat minor Op. 23
+
+2025.05.11.
+France, Paris, Palais Garnier
+(48.872146091661754, 2.331547753452648)
