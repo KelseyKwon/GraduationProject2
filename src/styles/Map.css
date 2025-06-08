@@ -36,11 +36,11 @@ html {
 
 /* 사이드바: flex 아이템으로 고정 너비 */
 .map-sidebar {
-  width: 400px;         /* or 적절한 너비 */
-  height: 100vh;        /* 화면 전체 높이 */
-  overflow-y: auto;     /* 세로 스크롤 추가 */
+  width: 400px; /* or 적절한 너비 */
+  height: 100vh; /* 화면 전체 높이 */
+  overflow-y: auto; /* 세로 스크롤 추가 */
   background-color: white;
-  position: absolute;   /* 오른쪽에 고정 */
+  position: absolute; /* 오른쪽에 고정 */
   right: 0;
   top: 0;
   z-index: 10;
@@ -69,4 +69,18 @@ html {
   100% {
     stroke-dashoffset: 100;
   }
+}
+/* InfoWindow가 사이드바나 부모 컨테이너 뒤에 가려지지 않도록 */
+.gm-style-iw {
+  z-index: 10000 !important;
+}
+
+/* map-background 영역에서 overflow를 풀어서 팝업이 잘려나가지 않게 */
+.map-background {
+  overflow: visible; /* 기존 overflow hidden 또는 다른 설정이 있으면 덮어쓰기 */
+}
+
+/* 사이드바가 InfoWindow 뒤에 있도록 z-index 낮추기 */
+.map-sidebar {
+  z-index: 1 !important;
 }

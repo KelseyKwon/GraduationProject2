@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { useNavigate, useSearchParams } from "react-router-dom"; // 🔥 navigate와 searchParams 추가
 import "./../styles/Sidebar.css";
 import { CalendarButton } from "./Button";
 
@@ -9,24 +10,29 @@ const parseDate = (dateString) => {
   return new Date(`${year}-${month}-${day}`);
 };
 
-const Sidebar = ({ date, events, onEventClick }) => {
-  const initialDate = isNaN(new Date(date).getTime()) ? new Date() : new Date(date);
+const Sidebar = ({ date, events, onEventClick, onDetailClick }) => {
+  const navigate = useNavigate(); // 🔥 navigate 훅 사용
+  const [searchParams] = useSearchParams(); // 🔥 query 파라미터 훅
+  const artistId = searchParams.get("artist") || "1"; // 🔥 artistId 추출
+
+  const initialDate = isNaN(new Date(date).getTime())
+    ? new Date()
+    : new Date(date);
   const [selectedDate, setSelectedDate] = useState(initialDate);
   const [showDatePicker, setShowDatePicker] = useState(false);
-  const [useFilter, setUseFilter] = useState(false); // 필터 사용 여부
+  const [useFilter, setUseFilter] = useState(false);
 
   const handleDateChange = (newDate) => {
     setSelectedDate(newDate);
     setShowDatePicker(false);
   };
 
-  // 필터 적용 시 해당 달 이벤트만, 아니면 전체 이벤트
   const filteredEvents = useFilter
     ? events.filter((event) => {
-        const eventDate = parseDate(event.date);
+        const d = parseDate(event.date);
         return (
-          eventDate.getFullYear() === selectedDate.getFullYear() &&
-          eventDate.getMonth() === selectedDate.getMonth()
+          d.getFullYear() === selectedDate.getFullYear() &&
+          d.getMonth() === selectedDate.getMonth()
         );
       })
     : events;
@@ -41,7 +47,6 @@ const Sidebar = ({ date, events, onEventClick }) => {
             day: "numeric",
           })}
         </h3>
-
         <div className="calendar-wrapper">
           <CalendarButton onClick={() => setShowDatePicker(!showDatePicker)} />
           {showDatePicker && (
@@ -57,9 +62,9 @@ const Sidebar = ({ date, events, onEventClick }) => {
             </div>
           )}
         </div>
-
-        {/* 필터 켜고 끄기 버튼 추가 */}
-        <label style={{ marginLeft: "1rem", fontSize: "0.9rem", cursor: "pointer" }}>
+        <label
+          style={{ marginLeft: "1rem", fontSize: "0.9rem", cursor: "pointer" }}
+        >
           <input
             type="checkbox"
             checked={useFilter}
@@ -73,17 +78,30 @@ const Sidebar = ({ date, events, onEventClick }) => {
       <div className="sidebar-events">
         {filteredEvents && filteredEvents.length > 0 ? (
           filteredEvents.map((event, index) => (
-            <div
-              className="event-item"
-              key={index}
-              onClick={() => onEventClick(event.name)}
-            >
-              {index > 0 && <div className="event-line"></div>}
-              <div className="event-icon"></div>
-              <div className="event-details">
-                <div className="event-name">{event.name}</div>
-                <div className="event-date">‐ {event.date}</div>
+            <div className="event-item" key={index}>
+              <div
+                className="event-info"
+                onClick={() => onEventClick(event.name)}
+              >
+                {index > 0 && <div className="event-line"></div>}
+                <div className="event-icon"></div>
+                <div className="event-details">
+                  <div className="event-name">{event.name}</div>
+                  <div className="event-date">‐ {event.date}</div>
+                </div>
               </div>
+              <button
+                className="detail-button"
+                onClick={() =>
+                  navigate(
+                    `/mapinfo/basic?artist=${artistId}&event=${encodeURIComponent(
+                      event.name
+                    )}`
+                  )
+                }
+              >
+                상세보기
+              </button>
             </div>
           ))
         ) : (
