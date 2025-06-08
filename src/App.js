@@ -21,7 +21,7 @@ function App() {
         <Route path="basic" element={<BasicInfo />} />
         <Route path="concert" element={<ConcertInfo />} />
         {/* NearInfo에 JSON 데이터를 넘겨줌 */}
-        <Route path="near" element={<NearInfo data={data} />} />
+        <Route path="near" element={<NearInfo />} />
         <Route path="restaurant" element={<Restaurant />} />
         <Route path="cafe" element={<Cafe />} />
         <Route path="popular" element={<Popular />} />

@@ -82,15 +82,14 @@ const Map = () => {
 
   const shouldShowSidebar = location.pathname === "/map";
 
-  const filteredEvents = getArtistEvents(artistId).filter((event) => {
-    const date = parseDate(event.date);
-    return (
-      date.getFullYear() === today.getFullYear() &&
-      date.getMonth() === today.getMonth()
-    );
-  });
+  const filteredEvents = getArtistEvents(artistId)
+  .sort((a, b) => parseDate(a.date) - parseDate(b.date)); // 날짜 순 정렬
 
-  const polylinePath = filteredEvents.map((e) => e.coordinates);
+// Google Map 형식에 맞게 좌표 변환
+const polylinePath = filteredEvents.map((e) => ({
+  lat: e.coordinates.latitude,
+  lng: e.coordinates.longitude,
+}));
 
   return (
     <div className="map-container">
@@ -98,11 +97,27 @@ const Map = () => {
       <div className="map-content">
         <div className="map-background">
           <LoadScript googleMapsApiKey="AIzaSyAEvELryy_YAdKvjzbf3bnGQ9IhlJ3xRaY">
-            <GoogleMap
-              mapContainerStyle={containerStyle}
-              center={worldCenter}
-              zoom={2}
-            >
+          <GoogleMap
+            mapContainerStyle={containerStyle}
+            center={worldCenter}
+            zoom={2}
+            options={{
+              mapTypeControl: false,    // 필요에 따라 지도 유형 컨트롤 끄기
+              streetViewControl: false, // 필요에 따라 스트리트뷰 컨트롤 끄기
+              fullscreenControl: false, // 필요에 따라 전체화면 컨트롤 끄기
+              gestureHandling: "greedy", // 사용자의 제스처 인식 방식 (선택)
+              restriction: {
+                latLngBounds: {
+                  north: 85,
+                  south: -85,
+                  west: -180,
+                  east: 180,
+                },
+                strictBounds: true,  // 지도가 범위를 넘지 않도록 제한(필요 시 true)
+              },
+              noWrap: true, // 좌우 반복 막기
+            }}
+          >
               {userLocation && (
                 <Marker
                   position={userLocation}
@@ -115,12 +130,15 @@ const Map = () => {
               {filteredEvents.map((event, index) => (
                 <Marker
                   key={index}
-                  position={event.coordinates}
+                  position={{
+                    lat: event.coordinates.latitude,
+                    lng: event.coordinates.longitude,
+                  }}
                   label={{
                     text: `${index + 1}`,
-                    color: "white",
+                    color: "black",
                     fontWeight: "bold",
-                    fontSize: "14px",
+                    fontSize: "12px",
                   }}
                   title={`${event.venue.city}, ${event.venue.name} - ${event.date}`}
                   icon={{
@@ -128,7 +146,7 @@ const Map = () => {
                   }}
                   onClick={() =>
                     navigate(
-                      `/mapinfo/basic?event=${encodeURIComponent(
+                      `/mapinfo/basic?artist=${artistId}&event=${encodeURIComponent(
                         `${event.venue.city}, ${event.venue.name}`
                       )}`
                     )
@@ -154,7 +172,10 @@ const Map = () => {
               events={filteredEvents.map((e) => ({
                 name: `${e.venue.city}, ${e.venue.name}`,
                 date: e.date,
-                coordinates: e.coordinates,
+                coordinates: {
+                  lat: e.coordinates.latitude,
+                  lng: e.coordinates.longitude,
+                },
               }))}
               onEventClick={(eventName) => {
                 const event = filteredEvents.find(
@@ -162,7 +183,7 @@ const Map = () => {
                 );
                 if (event) {
                   navigate(
-                    `/mapinfo/basic?event=${encodeURIComponent(
+                    `/mapinfo/basic?artist=${artistId}&event=${encodeURIComponent(
                       `${event.venue.city}, ${event.venue.name}`
                     )}`
                   );

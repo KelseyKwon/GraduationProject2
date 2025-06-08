@@ -1,153 +1,162 @@
-import React, { useEffect, useState, useRef } from "react";
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
-import data from "../../data/ArtistData_Cho.json"; // JSON 파일 불러오기
+import React, { useEffect, useState } from "react";
+import { LoadScript } from "@react-google-maps/api";
 
-const libraries = ["places"]; // LoadScript의 `libraries` 최적화
+const libraries = ["places"];
 
-const NearInfo = () => {
+const NearInfo = ({ concert, artistId }) => {
+  console.log("NearInfo artistId:", artistId);
   const [latitude, setLatitude] = useState(0);
   const [longitude, setLongitude] = useState(0);
-  const [selectedCategory, setSelectedCategory] = useState(null);
-  const [markers, setMarkers] = useState([]);
-  const mapRef = useRef(null); // 구글 맵 인스턴스 저장
+  const [selectedCategory, setSelectedCategory] = useState("cafe");
+  const [places, setPlaces] = useState([]);
+  const [mapReady, setMapReady] = useState(false); // API 로딩 여부
 
-  // Google Places API 호출
-  const fetchPlaces = async (category) => {
-    if (!mapRef.current) {
-      console.warn("Google Map is not loaded yet");
+  useEffect(() => {
+    if (concert?.coordinates) {
+      setLatitude(concert.coordinates.latitude);
+      setLongitude(concert.coordinates.longitude);
+    }
+  }, [concert]);
+
+  const fetchPlaces = (category) => {
+    if (!window.google?.maps) return;
+    if (latitude === 0 && longitude === 0) {
+      console.warn("Invalid coordinates, skipping fetchPlaces");
       return;
     }
-    if (!latitude || !longitude) {
-      console.warn("Latitude or Longitude is not set");
-      return;
-    }
+    console.log("Fetching places for:", category, latitude, longitude);
 
-    console.log("Fetching places for category:", category);
+    const dummyMapDiv = document.createElement("div");
+    const dummyMap = new window.google.maps.Map(dummyMapDiv, {
+      center: { lat: latitude, lng: longitude },
+      zoom: 15,
+    });
 
-    const placesService = new window.google.maps.places.PlacesService(
-      mapRef.current
-    );
+    const service = new window.google.maps.places.PlacesService(dummyMap);
+
     const request = {
       location: { lat: latitude, lng: longitude },
       radius: 1500,
-      type: [category],
+      type: category,
     };
 
-    placesService.nearbySearch(request, (results, status) => {
+    service.nearbySearch(request, (results, status) => {
       if (status === window.google.maps.places.PlacesServiceStatus.OK) {
-        console.log("✅ Places API Results:", results);
-        setMarkers(
+        setPlaces(
           results.map((place) => ({
             id: place.place_id,
             name: place.name,
-            latitude: place.geometry.location.lat(),
-            longitude: place.geometry.location.lng(),
+            address: place.vicinity,
+            rating: place.rating,
           }))
         );
       } else {
-        console.error(`❌ Places API Error: ${status}`);
-        if (
-          status === window.google.maps.places.PlacesServiceStatus.ZERO_RESULTS
-        ) {
-          console.warn("⚠️ No places found.");
-        } else if (
-          status ===
-          window.google.maps.places.PlacesServiceStatus.OVER_QUERY_LIMIT
-        ) {
-          console.error("🚨 API quota exceeded! Try again later.");
-        } else if (
-          status ===
-          window.google.maps.places.PlacesServiceStatus.REQUEST_DENIED
-        ) {
-          console.error(
-            "⛔ API request denied. Check your API key and billing settings."
-          );
-        } else if (
-          status ===
-          window.google.maps.places.PlacesServiceStatus.INVALID_REQUEST
-        ) {
-          console.error("❌ Invalid request parameters.");
-        } else {
-          console.error("🔥 Unknown Places API error.");
-        }
-        setMarkers([]); // 오류 시 마커 초기화
+        console.warn("Places API Error:", status);
+        setPlaces([]);
       }
     });
   };
 
-  // 데이터 로딩 후 첫 번째 위치를 기본으로 설정
   useEffect(() => {
-    if (data.length > 0) {
-      const currentData = data[0];
-      console.log("Loaded Data: ", currentData);
-      setLatitude(currentData?.coordinates.latitude || 0);
-      setLongitude(currentData?.coordinates.longitude || 0);
-    }
-  }, []);
-
-  // 선택된 카테고리 변경 시 마커 업데이트
-  useEffect(() => {
-    if (selectedCategory) {
+    if (mapReady && latitude !== 0 && longitude !== 0) {
       fetchPlaces(selectedCategory);
     }
-  }, [selectedCategory, latitude, longitude]);
+  }, [selectedCategory, latitude, longitude, mapReady]);
 
   return (
-    <div>
-      <h3>Near Info Page</h3>
-
-      {/* 카테고리 버튼 */}
-      <nav>
-        <ul
+    <LoadScript
+      googleMapsApiKey="AIzaSyAEvELryy_YAdKvjzbf3bnGQ9IhlJ3xRaY"
+      libraries={libraries}
+      onLoad={() => {
+        setMapReady(true);
+        fetchPlaces(selectedCategory);
+      }}
+    >
+      <div style={{ display: "flex", height: "100vh", position: "relative" }}>
+        {/* 오른쪽 고정 버튼 */}
+        <div
           style={{
-            listStyle: "none",
-            padding: 0,
+            position: "fixed",
+            top: "200px",
+            right: "50px",
             display: "flex",
+            flexDirection: "column",
             gap: "10px",
+            zIndex: 10,
           }}
         >
-          {["restaurant", "cafe", "tourist_attraction"].map((category) => (
-            <li key={category}>
-              <button
-                onClick={() => setSelectedCategory(category)}
+          {["cafe", "tourist_attraction", "restaurant"].map((category) => (
+            <button
+              key={category}
+              onClick={() => setSelectedCategory(category)}
+              style={{
+                padding: "10px 15px",
+                border: "1px solid black",
+                backgroundColor:
+                  selectedCategory === category ? "#3498db" : "#f0f0f0",
+                color: selectedCategory === category ? "#fff" : "#000",
+                borderRadius: "5px",
+                cursor: "pointer",
+                fontWeight: "bold",
+              }}
+            >
+              {category === "cafe"
+                ? "Cafe"
+                : category === "tourist_attraction"
+                ? "Popular"
+                : "Restaurant"}
+            </button>
+          ))}
+        </div>
+
+        {/* 카드 목록 */}
+        <div
+          style={{
+            flex: 1,
+            marginRight: "180px",
+            overflowY: "scroll",
+            padding: "5px 20px 20px 20px",
+            marginTop: "-20px"
+          }}
+        >
+          <h2>
+            {concert?.venue?.name} 근처{" "}
+            {selectedCategory === "cafe"
+              ? "카페"
+              : selectedCategory === "tourist_attraction"
+              ? "명소"
+              : "식당"}
+          </h2>
+          <p>{concert?.date} - {concert?.venue?.city}, {concert?.venue?.country}</p>
+
+          {places.length === 0 ? (
+            <p>장소를 불러오는 중이거나 결과가 없습니다.</p>
+          ) : (
+            places.map((place) => (
+              <div
+                key={place.id}
                 style={{
-                  backgroundColor:
-                    selectedCategory === category ? "blue" : "white",
-                  color: selectedCategory === category ? "white" : "black",
-                  padding: "10px",
-                  border: "1px solid black",
-                  cursor: "pointer",
+                  border: "1px solid #ccc",
+                  borderRadius: "8px",
+                  padding: "15px",
+                  marginBottom: "10px",
+                  backgroundColor: "#f9f9f9",
+                  cursor: "pointer",  // 클릭 가능 표시
+                }}
+                onClick={() => {
+                  const url = `https://www.google.com/maps/place/?q=place_id:${place.id}`;
+                  window.open(url, "_blank");  // 새 탭으로 열기
                 }}
               >
-                {category.charAt(0).toUpperCase() + category.slice(1)}
-              </button>
-            </li>
-          ))}
-        </ul>
-      </nav>
-
-      {/* 구글 맵 */}
-      <LoadScript
-        googleMapsApiKey="AIzaSyAEvELryy_YAdKvjzbf3bnGQ9IhlJ3xRaY"
-        libraries={libraries}
-      >
-        <GoogleMap
-          center={{ lat: latitude, lng: longitude }}
-          zoom={14}
-          mapContainerStyle={{ height: "400px", width: "100%" }}
-          onLoad={(map) => (mapRef.current = map)} // 지도 로드 후 참조 저장
-        >
-          {/* 마커 표시 */}
-          {markers.map((marker) => (
-            <Marker
-              key={marker.id}
-              position={{ lat: marker.latitude, lng: marker.longitude }}
-              label={marker.name}
-            />
-          ))}
-        </GoogleMap>
-      </LoadScript>
-    </div>
+                <h3>{place.name}</h3>
+                <p>{place.address}</p>
+                {place.rating && <p>⭐ Rating: {place.rating}</p>}
+              </div>
+            ))
+          )}
+        </div>
+      </div>
+    </LoadScript>
   );
 };
 

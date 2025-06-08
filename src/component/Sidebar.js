@@ -4,31 +4,32 @@ import "react-datepicker/dist/react-datepicker.css";
 import "./../styles/Sidebar.css";
 import { CalendarButton } from "./Button";
 
-// 날짜 포맷이 '2025.01.23.'이므로 수동 파싱 필요
 const parseDate = (dateString) => {
   const [year, month, day] = dateString.split(".").filter(Boolean);
   return new Date(`${year}-${month}-${day}`);
 };
 
 const Sidebar = ({ date, events, onEventClick }) => {
-  const initialDate = isNaN(new Date(date).getTime())
-    ? new Date()
-    : new Date(date);
+  const initialDate = isNaN(new Date(date).getTime()) ? new Date() : new Date(date);
   const [selectedDate, setSelectedDate] = useState(initialDate);
   const [showDatePicker, setShowDatePicker] = useState(false);
+  const [useFilter, setUseFilter] = useState(false); // 필터 사용 여부
 
   const handleDateChange = (newDate) => {
     setSelectedDate(newDate);
     setShowDatePicker(false);
   };
 
-  const filteredEvents = events?.filter((event) => {
-    const eventDate = parseDate(event.date);
-    return (
-      eventDate.getFullYear() === selectedDate.getFullYear() &&
-      eventDate.getMonth() === selectedDate.getMonth()
-    );
-  });
+  // 필터 적용 시 해당 달 이벤트만, 아니면 전체 이벤트
+  const filteredEvents = useFilter
+    ? events.filter((event) => {
+        const eventDate = parseDate(event.date);
+        return (
+          eventDate.getFullYear() === selectedDate.getFullYear() &&
+          eventDate.getMonth() === selectedDate.getMonth()
+        );
+      })
+    : events;
 
   return (
     <div className="sidebar-container">
@@ -40,6 +41,7 @@ const Sidebar = ({ date, events, onEventClick }) => {
             day: "numeric",
           })}
         </h3>
+
         <div className="calendar-wrapper">
           <CalendarButton onClick={() => setShowDatePicker(!showDatePicker)} />
           {showDatePicker && (
@@ -55,6 +57,17 @@ const Sidebar = ({ date, events, onEventClick }) => {
             </div>
           )}
         </div>
+
+        {/* 필터 켜고 끄기 버튼 추가 */}
+        <label style={{ marginLeft: "1rem", fontSize: "0.9rem", cursor: "pointer" }}>
+          <input
+            type="checkbox"
+            checked={useFilter}
+            onChange={() => setUseFilter(!useFilter)}
+            style={{ marginRight: "0.3rem" }}
+          />
+          해당 달만 보기
+        </label>
       </div>
 
       <div className="sidebar-events">
@@ -74,7 +87,7 @@ const Sidebar = ({ date, events, onEventClick }) => {
             </div>
           ))
         ) : (
-          <div className="no-events">이번 달 공연이 없습니다.</div>
+          <div className="no-events">해당하는 공연이 없습니다.</div>
         )}
       </div>
     </div>

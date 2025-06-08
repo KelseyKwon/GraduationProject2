@@ -7,6 +7,7 @@ const Sidebar2 = () => {
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
   const event = searchParams.get("event"); // 현재 URL의 event 값 가져오기
+  const artist = searchParams.get("artist");
 
   const tabs = [
     { id: "basic", label: "기본 정보", path: "/mapinfo/basic" },
@@ -19,11 +20,17 @@ const Sidebar2 = () => {
     <div className="sidebar2-container">
       {/* 탭 메뉴 */}
       <div className="sidebar2-tabs">
-        {tabs.map((tab) => {
-          // 현재 URL에 event 값이 있다면 새로운 경로에 추가
-          const newPath = event
-            ? `${tab.path}?event=${encodeURIComponent(event)}`
-            : tab.path;
+       {tabs.map((tab) => {
+          let newPath = tab.path;
+
+          const params = new URLSearchParams();
+          if (artist) params.append("artist", artist);
+          if (event) params.append("event", event);
+
+          const queryString = params.toString();
+          if (queryString) {
+            newPath = `${tab.path}?${queryString}`;
+          }
 
           return (
             <button
