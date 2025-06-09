@@ -1,0 +1,79 @@
+/* Select.css */
+.select-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 화면 중앙 배치 */
+  align-items: center;
+  width: 100%;
+  min-height: 100vh; /* 화면 높이 전체 사용 */
+  background-color: #efe9e1;
+  padding: 20px;
+  box-sizing: border-box; /* 내부 여백 포함 */
+}
+
+.select-title {
+  font-size: 48px; /* 제목 폰트 크기 */
+  font-family: "Pretendard", sans-serif;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.select-description {
+  font-size: 32px; /* 설명 폰트 크기 */
+  font-family: "Pretendard", sans-serif;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.artist-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 첫 줄에 3개 배치 */
+  gap: 40px; /* 그리드 간격 */
+  justify-content: center; /* 가운데 정렬 */
+  width: 100%; /* 그리드가 부모 컨테이너의 전체 너비를 차지 */
+  max-width: 1200px; /* 최대 그리드 너비 설정 */
+  margin-bottom: 40px; /* 아래 여백 추가 */
+  box-sizing: border-box;
+}
+
+.artist-grid:last-child {
+  grid-template-columns: repeat(2, 1fr); /* 둘째 줄에 2개 배치 */
+}
+
+.artist-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 20px;
+}
+
+.artist-card:hover {
+  transform: scale(1.05); /* 마우스 호버 시 확대 효과 */
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.artist-image {
+  width: 400px; /* 이미지 크기 */
+  height: auto; /* 비율 유지 */
+  border-radius: 10px;
+}
+
+.artist-name {
+  font-size: 24px; /* 폰트 크기 증가 */
+  font-family: "Pretendard", sans-serif;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  line-height: 1.5;
+}

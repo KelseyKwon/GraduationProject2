@@ -1,0 +1,176 @@
+/* 전체 컨테이너 */
+.accompany-info-container {
+  width: var(--sidebar-width);
+  max-width: 644px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95); /* 배경 투명도 낮춤 */
+  border-radius: 12px;
+  position: absolute;
+  top: calc(10vh + 20px);
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 2;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* 검색창 */
+.search-bar {
+  width: 500px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: 1px solid #cccccc;
+  border-radius: 70px;
+  padding: 5px 25px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+  position: relative;
+  margin: 20px auto 0; /* 위쪽 여백 추가 & 중앙 정렬 */
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 350;
+  color: #6f6f6f;
+  background: none;
+}
+
+.search-button {
+  width: 40px;
+  height: 40px;
+  background: #747474;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+
+.search-icon {
+  color: white;
+  font-size: 20px;
+}
+
+/* 게시글 목록 */
+.post-list {
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px; /* 검색창과의 간격 조정 */
+}
+
+/* 게시글 항목 */
+.post-item {
+  width: 100%;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.post-item:hover {
+  transform: scale(1.02);
+}
+
+/* 게시글 아이콘 */
+.post-icon {
+  font-size: 24px;
+  color: #b450c5;
+}
+
+/* 게시글 제목 */
+.post-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+
+/* 게시글 메타 정보 */
+.post-meta {
+  font-size: 14px;
+  color: #999999;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 모달 스타일 */
+/* 모달 배경 */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* 모달 창 */
+.modal-content {
+  background: white;
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 쪽지 입력 */
+.message-input {
+  width: 90%;
+  height: 80px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* 버튼 스타일 */
+.message-button,
+.send-message-button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #b450c5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.message-button:hover,
+.send-message-button:hover {
+  background: #9c3cb0;
+}
+
+/* 닫기 버튼 */
+.close-button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #ccc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background: #aaa;
+}

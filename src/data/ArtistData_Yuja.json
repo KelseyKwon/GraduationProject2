@@ -1,0 +1,405 @@
+[
+    {
+        "date": "2025.01.12.",
+        "venue": {
+            "country": "France",
+            "city": "Paris",
+            "name": "Philharmonie de Paris"
+        },
+        "coordinates": {
+            "latitude": 48.89137386636755,
+            "longitude": 2.3943281841405644
+        },
+        "details": "TCHAIKOVSKY: Piano Concerto No. 1\n"
+    },
+    {
+        "date": "2025.01.16.",
+        "venue": {
+            "country": "United States",
+            "city": "Philadelphia, PA",
+            "name": "Marian Anderson Hall"
+        },
+        "coordinates": {
+            "latitude": 39.948776850283814,
+            "longitude": -75.16590886891184
+        },
+        "details": "TCHAIKOVSKY: Piano Concerto No. 1\n"
+    },
+    {
+        "date": "2025.01.17.",
+        "venue": {
+            "country": "United States",
+            "city": "Philadelphia, PA",
+            "name": "Marian Anderson Hall"
+        },
+        "coordinates": {
+            "latitude": 39.948776850283814,
+            "longitude": -75.16590886891184
+        },
+        "details": "TCHAIKOVSKY: Piano Concerto No. 1\n"
+    },
+    {
+        "date": "2025.01.18.",
+        "venue": {
+            "country": "United States",
+            "city": "Philadelphia, PA",
+            "name": "Marian Anderson Hall"
+        },
+        "coordinates": {
+            "latitude": 39.948776850283814,
+            "longitude": -75.16590886891184
+        },
+        "details": "TCHAIKOVSKY: Piano Concerto No. 1\n"
+    },
+    {
+        "date": "2025.01.23.",
+        "venue": {
+            "country": "United States",
+            "city": "New York, NY",
+            "name": "David Geffen Hall"
+        },
+        "coordinates": {
+            "latitude": 40.77306407096388,
+            "longitude": -73.98312236039212
+        },
+        "details": "JANÁČEK: Capriccio for Piano Left Hand and Winds\nSTRAVINSKY: Concerto for Piano and Wind Instruments\nGERSHWIN: Rhapsody in Blue (original jazz band version)\n"
+    },
+    {
+        "date": "2025.01.24.",
+        "venue": {
+            "country": "United States",
+            "city": "New York, NY",
+            "name": "David Geffen Hall"
+        },
+        "coordinates": {
+            "latitude": 40.77306407096388,
+            "longitude": -73.98312236039212
+        },
+        "details": "JANÁČEK: Capriccio for Piano Left Hand and Winds\nSTRAVINSKY: Concerto for Piano and Wind Instruments\nGERSHWIN: Rhapsody in Blue (original jazz band version)\n"
+    },
+    {
+        "date": "2025.01.25.",
+        "venue": {
+            "country": "United States",
+            "city": "New York, NY",
+            "name": "David Geffen Hall"
+        },
+        "coordinates": {
+            "latitude": 40.77306407096388,
+            "longitude": -73.98312236039212
+        },
+        "details": "JANÁČEK: Capriccio for Piano Left Hand and Winds\nSTRAVINSKY: Concerto for Piano and Wind Instruments\nGERSHWIN: Rhapsody in Blue (original jazz band version)\n"
+    },
+    {
+        "date": "2025.02.08.",
+        "venue": {
+            "country": "USA",
+            "city": "Newport News, VA",
+            "name": "Ferguson Center for the Arts"
+        },
+        "coordinates": {
+            "latitude": 37.062008832377764,
+            "longitude": -76.49045833355129
+        },
+        "details": "STRAVINSKY: Movements for Piano and Orchestra\nSTRAVINSKY: Concerto for Piano and Wind Instruments\nSTRAVINSKY: Capriccio for Piano and Orchestra\n"
+    },
+    {
+        "date": "2025.02.13.",
+        "venue": {
+            "country": "United States",
+            "city": "San Francisco, CA",
+            "name": "Davies Symphony Hall"
+        },
+        "coordinates": {
+            "latitude": 37.77809897130641,
+            "longitude": -122.42094827770379
+        },
+        "details": "STRAVINSKY: Concerto for Piano and Wind Instruments\nSTRAVINSKY: Capriccio for Piano and Orchestra\nSTRAVINSKY: Movements for Piano and Orchestra\n"
+    },
+    {
+        "date": "2025.02.14.",
+        "venue": {
+            "country": "United States",
+            "city": "San Francisco, CA",
+            "name": "Davies Symphony Hall"
+        },
+        "coordinates": {
+            "latitude": 37.77809897130641,
+            "longitude": -122.42094827770379
+        },
+        "details": "STRAVINSKY: Concerto for Piano and Wind Instruments\nSTRAVINSKY: Capriccio for Piano and Orchestra\nSTRAVINSKY: Movements for Piano and Orchestra\n"
+    },
+    {
+        "date": "2025.02.15.",
+        "venue": {
+            "country": "United States",
+            "city": "San Francisco, CA",
+            "name": "Davies Symphony Hall"
+        },
+        "coordinates": {
+            "latitude": 37.77809897130641,
+            "longitude": -122.42094827770379
+        },
+        "details": "STRAVINSKY: Concerto for Piano and Wind Instruments\nSTRAVINSKY: Capriccio for Piano and Orchestra\nSTRAVINSKY: Movements for Piano and Orchestra\n"
+    },
+    {
+        "date": "2025.02.16.",
+        "venue": {
+            "country": "United States",
+            "city": "San Francisco, CA",
+            "name": "Davies Symphony Hall"
+        },
+        "coordinates": {
+            "latitude": 37.77809897130641,
+            "longitude": -122.42094827770379
+        },
+        "details": "STRAVINSKY: Concerto for Piano and Wind Instruments\nSTRAVINSKY: Capriccio for Piano and Orchestra\nSTRAVINSKY: Movements for Piano and Orchestra\n"
+    },
+    {
+        "date": "2025.02.17.",
+        "venue": {
+            "country": "Canada",
+            "city": "Toronto",
+            "name": "Koerner Hall"
+        },
+        "coordinates": {
+            "latitude": 43.668059708693065,
+            "longitude": -79.3964189658254
+        },
+        "details": "BERIO: 'Wasserklavier' from Six Encores for Piano\nSCHUBERT: Fantasia in F minor for Piano Four-hands\nLIGETI: 'Bewegung' from Three Pieces for Two Pianos\nBRUBECK: Fugue from Points on Jazz\nNANCARROW/ADÈS: Study No. 6\nADAMS: Hallelujah Junction\nPÄRT: Hymn to a Great City\nRACHMANINOV: Symphonic Dances for Two Pianos Op. 45\n"
+    },
+    {
+        "date": "2025.02.18.",
+        "venue": {
+            "country": "Canada",
+            "city": "Toronto",
+            "name": "Koerner Hall"
+        },
+        "coordinates": {
+            "latitude": 43.668059708693065,
+            "longitude": -79.3964189658254
+        },
+        "details": "BERIO: Wasserklavier\nSCHUBERT: Fantasia in F minor for Four Hands\nLIGETI: “Bewegung” from Three Pieces for Two Pianos\nBRUBECK: Fugue from Points on Jazz\nNANCARROW, arr. Thomas ADÈS: Study No. 6\nJohn ADAMS: Hallelujah Junction\nArvo PÄRT: Hymn to a Great City\nRACHMANINOFF: Symphonic Dances\n"
+    },
+    {
+        "date": "2025.02.19.",
+        "venue": {
+            "country": "United States",
+            "city": "New York, NY",
+            "name": "Carnegie Hall"
+        },
+        "coordinates": {
+            "latitude": 40.76523140853768,
+            "longitude": -73.97996651806416
+        },
+        "details": "BERIO: Wasserklavier\nSCHUBERT: Fantasia in F minor for Four Hands\nLIGETI: “Bewegung” from Three Pieces for Two Pianos\nBRUBECK: Fugue from Points on Jazz\nNANCARROW, arr. Thomas ADÈS: Study No. 6\nJohn ADAMS: Hallelujah Junction\nArvo PÄRT: Hymn to a Great City\nRACHMANINOFF: Symphonic Dances\n"
+    },
+    {
+        "date": "2025.02.23.",
+        "venue": {
+            "country": "United States",
+            "city": "Cleveland, OH",
+            "name": "Severance Hall"
+        },
+        "coordinates": {
+            "latitude": 41.506244695112585,
+            "longitude": -81.60955210269059
+        },
+        "details": "BERIO: Wasserklavier\nSCHUBERT: Fantasia in F minor for Four Hands\nLIGETI: “Bewegung” from Three Pieces for Two Pianos\nBRUBECK: Fugue from Points on Jazz\nNANCARROW, arr. Thomas ADÈS: Study No. 6\nJohn ADAMS: Hallelujah Junction\nArvo PÄRT: Hymn to a Great City\nRACHMANINOFF: Symphonic Dances\n"
+    },
+    {
+        "date": "2025.02.26.",
+        "venue": {
+            "country": "United States",
+            "city": "Los Angeles, CA",
+            "name": "Walt Disney Concert Hall"
+        },
+        "coordinates": {
+            "latitude": 34.055568755038564,
+            "longitude": -118.24983966037681
+        },
+        "details": "BERIO: Wasserklavier\nSCHUBERT: Fantasia in F minor for Four Hands\nLIGETI: “Bewegung” from Three Pieces for Two Pianos\nBRUBECK: Fugue from Points on Jazz\nNANCARROW, arr. Thomas ADÈS: Study No. 6\nJohn ADAMS: Hallelujah Junction\nArvo PÄRT: Hymn to a Great City\nRACHMANINOFF: Symphonic Dances\n"
+    },
+    {
+        "date": "2025.03.02.",
+        "venue": {
+            "country": "United States",
+            "city": "San Francisco, CA",
+            "name": "Davies Symphony Hall"
+        },
+        "coordinates": {
+            "latitude": 37.77815833097713,
+            "longitude": -122.42076588749383
+        },
+        "details": "BERIO: Wasserklavier\nSCHUBERT: Fantasia in F minor for Four Hands\nLIGETI: “Bewegung” from Three Pieces for Two Pianos\nBRUBECK: Fugue from Points on Jazz\nNANCARROW, arr. Thomas ADÈS: Study No. 6\nJohn ADAMS: Hallelujah Junction\nArvo PÄRT: Hymn to a Great City\nRACHMANINOFF: Symphonic Dances\n"
+    },
+    {
+        "date": "2025.03.13.",
+        "venue": {
+            "country": "United States",
+            "city": "New York, NY",
+            "name": "David Geffen Hall"
+        },
+        "coordinates": {
+            "latitude": 40.77312907069647,
+            "longitude": -73.98318673340741
+        },
+        "details": "RAVEL: Piano Concerto for the Left Hand\nRAVEL: Piano Concerto in G major\n"
+    },
+    {
+        "date": "2025.03.14.",
+        "venue": {
+            "country": "United States",
+            "city": "New York, NY",
+            "name": "David Geffen Hall"
+        },
+        "coordinates": {
+            "latitude": 40.77312907069647,
+            "longitude": -73.98318673340741
+        },
+        "details": "RAVEL: Piano Concerto for the Left Hand\nRAVEL: Piano Concerto in G major\n"
+    },
+    {
+        "date": "2025.03.15.",
+        "venue": {
+            "country": "United States",
+            "city": "New York, NY",
+            "name": "David Geffen Hall"
+        },
+        "coordinates": {
+            "latitude": 40.77312907069647,
+            "longitude": -73.98318673340741
+        },
+        "details": "RAVEL: Piano Concerto for the Left Hand\nRAVEL: Piano Concerto in G major\n"
+    },
+    {
+        "date": "2025.03.16.",
+        "venue": {
+            "country": "United States",
+            "city": "New York, NY",
+            "name": "David Geffen Hall"
+        },
+        "coordinates": {
+            "latitude": 40.77312907069647,
+            "longitude": -73.98318673340741
+        },
+        "details": "RAVEL: Piano Concerto for the Left Hand\nRAVEL: Piano Concerto in G major\n"
+    },
+    {
+        "date": "2025.04.16.",
+        "venue": {
+            "country": "Canada",
+            "city": "Toronto",
+            "name": "Roy Thomson Hall"
+        },
+        "coordinates": {
+            "latitude": 43.64676204090084,
+            "longitude": -79.38648200445215
+        },
+        "details": "TCHAIKOVSKY: Piano Concerto No. 1\n"
+    },
+    {
+        "date": "2025.04.17.",
+        "venue": {
+            "country": "Canada",
+            "city": "Toronto",
+            "name": "Roy Thomson Hall"
+        },
+        "coordinates": {
+            "latitude": 43.64676204090084,
+            "longitude": -79.38648200445215
+        },
+        "details": "TCHAIKOVSKY: Piano Concerto No. 1\n"
+    },
+    {
+        "date": "2025.04.19.",
+        "venue": {
+            "country": "Canada",
+            "city": "Toronto",
+            "name": "Roy Thomson Hall"
+        },
+        "coordinates": {
+            "latitude": 43.64676204090084,
+            "longitude": -79.38648200445215
+        },
+        "details": "TCHAIKOVSKY: Piano Concerto No. 1\n"
+    },
+    {
+        "date": "2025.04.26.",
+        "venue": {
+            "country": "United States",
+            "city": "Philadelphia, PA",
+            "name": "Marian Anderson Hall"
+        },
+        "coordinates": {
+            "latitude": 39.949961229552365,
+            "longitude": -75.1667671757822
+        },
+        "details": "BERNSTEIN: Symphony No. 2: The Age of Anxiety\n"
+    },
+    {
+        "date": "2025.05.02.",
+        "venue": {
+            "country": "Austria",
+            "city": "Vienna",
+            "name": "Musikverein"
+        },
+        "coordinates": {
+            "latitude": 48.23884532636098,
+            "longitude": 16.369043765646808
+        },
+        "details": "TCHAIKOVSKY: Concerto for Piano No. 1\n"
+    },
+    {
+        "date": "2025.05.03.",
+        "venue": {
+            "country": "Austria",
+            "city": "Vienna",
+            "name": "Musikverein"
+        },
+        "coordinates": {
+            "latitude": 48.23884532636098,
+            "longitude": 16.369043765646808
+        },
+        "details": "TCHAIKOVSKY: Piano Concerto No. 1 in B-flat minor Op. 23\n"
+    },
+    {
+        "date": "2025.05.04.",
+        "venue": {
+            "country": "Austria",
+            "city": "Vienna",
+            "name": "Musikverein"
+        },
+        "coordinates": {
+            "latitude": 48.23884532636098,
+            "longitude": 16.369043765646808
+        },
+        "details": "TCHAIKOVSKY: Piano Concerto No. 1 in B-flat minor Op. 23\n"
+    },
+    {
+        "date": "2025.05.06.",
+        "venue": {
+            "country": "Austria",
+            "city": "Vienna",
+            "name": "Wiener Konzerthaus"
+        },
+        "coordinates": {
+            "latitude": 48.20107034775163,
+            "longitude": 16.377286682257466
+        },
+        "details": "TCHAIKOVSKY: Piano Concerto No. 1 in B-flat minor Op. 23\n"
+    },
+    {
+        "date": "2025.05.11.",
+        "venue": {
+            "country": "France",
+            "city": "Paris",
+            "name": "Palais Garnier"
+        },
+        "coordinates": {
+            "latitude": 48.872146091661754,
+            "longitude": 2.331547753452648
+        },
+        "details": ""
+    }
+]

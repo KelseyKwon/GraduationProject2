@@ -1,0 +1,375 @@
+2025.02.02.
+England, London, London Symphony Orchestra
+(51.52036789302824, -0.09389369077487116)
+SCHUMANN Piano Concerto
+
+2025.02.04.
+Italy, Milan, Verdi Hall
+(51.50078681056803, -0.1773772600950117)
+TCHAIKOVSKY Piano Sonata in C-sharp Minor, Op. 80
+CHOPIN
+Waltz in E Major, Op. Posth.
+Waltz in F Minor, Op. 70, No. 2
+Waltz in A♭ Major, Op. 64, No. 3
+Waltz in D♭ Major, Op. 64, No. 1
+Waltz in A Minor, Op. 34, No. 2
+Waltz in E Minor, Op. Posth.
+BARBER Sonata in E-flat minor, Op. 26
+TCHAIKOVSKY Concert Suite from the ballet The Sleeping Beauty (arr. Mikhail Pletnev)
+
+2025.02.05.
+Italy, Rome, Accademia Nazionale di Santa Cecilia
+(41.93014710449184, 12.474201791147395)
+TCHAIKOVSKY Piano Sonata in C-sharp Minor, Op. 80
+CHOPIN
+Waltz in E Major, Op. Posth.
+Waltz in F Minor, Op. 70, No. 2
+Waltz in A♭ Major, Op. 64, No. 3
+Waltz in D♭ Major, Op. 64, No. 1
+Waltz in A Minor, Op. 34, No. 2
+Waltz in E Minor, Op. Posth.
+BARBER Sonata in E-flat minor, Op. 26
+TCHAIKOVSKY Concert Suite from the ballet The Sleeping Beauty (arr. Mikhail Pletnev)
+
+2025.02.06.
+Italy, Napoli, Teatro di San Carlo
+(40.83756584220026, 14.249745085452794)
+TCHAIKOVSKY Piano Sonata in C-sharp Minor, Op. 80
+CHOPIN
+Waltz in E Major, Op. Posth.
+Waltz in F Minor, Op. 70, No. 2
+Waltz in A♭ Major, Op. 64, No. 3
+Waltz in D♭ Major, Op. 64, No. 1
+Waltz in A Minor, Op. 34, No. 2
+Waltz in E Minor, Op. Posth.
+BARBER Sonata in E-flat minor, Op. 26
+TCHAIKOVSKY Concert Suite from the ballet The Sleeping Beauty (arr. Mikhail Pletnev)
+
+2025.02.09.
+Germany, Mannheim, Mannheim Philharmonic
+(49.48628732751386, 8.476543985830414)
+SCHUMANN Piano Concerto
+
+2025.02.11.
+Spain, San Sebastián, Auditorio Kursaal
+(43.32444225651648, -1.9783892758060777)
+TCHAIKOVSKY Piano Sonata in C-sharp Minor, Op. 80
+CHOPIN
+Waltz in E Major, Op. Posth.
+Waltz in F Minor, Op. 70, No. 2
+Waltz in A♭ Major, Op. 64, No. 3
+Waltz in D♭ Major, Op. 64, No. 1
+Waltz in A Minor, Op. 34, No. 2
+Waltz in E Minor, Op. Posth.
+BARBER Sonata in E-flat minor, Op. 26
+TCHAIKOVSKY Concert Suite from the ballet The Sleeping Beauty (arr. Mikhail Pletnev)
+
+2025.02.12.
+Spain, Sevilla, Teatro de la Maestranza
+(37.38399107164224, -5.996914428176119)
+TCHAIKOVSKY Piano Sonata in C-sharp Minor, Op. 80
+CHOPIN
+Waltz in E Major, Op. Posth.
+Waltz in F Minor, Op. 70, No. 2
+Waltz in A♭ Major, Op. 64, No. 3
+Waltz in D♭ Major, Op. 64, No. 1
+Waltz in A Minor, Op. 34, No. 2
+Waltz in E Minor, Op. Posth.
+BARBER Sonata in E-flat minor, Op. 26
+TCHAIKOVSKY Concert Suite from the ballet The Sleeping Beauty (arr. Mikhail Pletnev)
+
+2025.02.14.
+Spain, Barcelona, Palau de la Música Catalana
+(41.38776704857211, 2.1753382449910723)
+TCHAIKOVSKY Piano Sonata in C-sharp Minor, Op. 80
+CHOPIN
+Waltz in E Major, Op. Posth.
+Waltz in F Minor, Op. 70, No. 2
+Waltz in A♭ Major, Op. 64, No. 3
+Waltz in D♭ Major, Op. 64, No. 1
+Waltz in A Minor, Op. 34, No. 2
+Waltz in E Minor, Op. Posth.
+BARBER Sonata in E-flat minor, Op. 26
+TCHAIKOVSKY Concert Suite from the ballet The Sleeping Beauty (arr. Mikhail Pletnev)
+
+2025.02.21.
+California, San Francisco, San Francisco Symphony
+(37.77780677197687, -122.42063815884204)
+PROKOFIEV Piano Concerto no. 2
+
+2025.02.22.
+California, San Francisco, San Francisco Symphony
+(37.77780677197687, -122.42063815884204)
+PROKOFIEV Piano Concerto no. 2
+
+2025.02.23.
+California, San Francisco, San Francisco Symphony
+(37.77780677197687, -122.42063815884204)
+PROKOFIEV Piano Concerto no. 2
+
+2025.02.26.
+PA, Philadelphia, Kimmel Center
+(39.94695797463517, -75.16529700293381)
+
+2025.03.02.
+D.C., Washington, The Kennedy Center
+(38.89606527480314, -77.05572561831528)
+BEETHOVEN Sonata No. 4 in A minor, Op. 23
+POULENC Sonata for violin and piano
+BRAHMS Sonata No. 1 in G, Op. 78
+BARTÓK Rhapsody No. 1
+
+2025.03.04.
+US, New York, Carnegie Hall
+(40.765337045521946, -73.97999870474678)
+BEETHOVEN Sonata No. 4 in A minor, Op. 23
+POULENC Sonata for violin and piano
+BRAHMS Sonata No. 1 in G, Op. 78
+BARTÓK Rhapsody No. 1
+
+2025.03.05.
+MA, Boston, Symphony Hall
+(42.34296618072063, -71.08559597215569)
+BEETHOVEN Sonata No. 4 in A minor, Op. 23
+POULENC Sonata for violin and piano
+BRAHMS Sonata No. 1 in G, Op. 78
+BARTÓK Rhapsody No. 1
+
+2025.03.07.
+MO, Kansas City, Folly Theater
+(39.10044511986952, -94.58723463947223)
+BEETHOVEN Sonata No. 4 in A minor, Op. 23
+POULENC Sonata for violin and piano
+BRAHMS Sonata No. 1 in G, Op. 78
+BARTÓK Rhapsody No. 1
+
+2025.03.09.
+Illinois, Chicago, Symphony Center
+(41.87915195017482, -87.62473532032922)
+BEETHOVEN Sonata No. 4 in A minor, Op. 23
+POULENC Sonata for violin and piano
+BRAHMS Sonata No. 1 in G, Op. 78
+BARTÓK Rhapsody No. 1
+
+2025.03.14.
+Australia, Adelaide, Adelaide Festival
+(-34.91833536522439, 138.59802877433728)
+SCHUBERT Schwanengesang
+SCHUBERT Piano Sonata No.21
+
+2025.03.16.
+Australia, UKARIA Cultural Centre, Adelaide Festival
+(-35.06821604271399, 138.90315190853238)
+SCHUBERT Die schöne Müllerin
+
+2025.03.26.
+Australia, Sydney, City Recital Hall
+(-33.86656152104631, 151.20777780849022)
+SCHUBERT Winterreise
+
+2025.03.28.
+Australia, Sydney, Sydney Symphony Orchestra
+(-33.86362710777065, 151.20913649684115)
+RACHMANINOFF Piano Concerto No. 4 in G minor, op. 40
+
+2025.03.29.
+Australia, Sydney, Sydney Symphony Orchestra
+(-33.86362710777065, 151.20913649684115)
+RACHMANINOFF Piano Concerto No. 4 in G minor, op. 40
+
+2025.03.30.
+Australia, Sydney, City Recital Hall
+(-33.86656152104631, 151.20777780849022)
+SCHUBERT Schwanengesang
+SCHUBERT Piano Sonata No.21
+
+2025.04.01.
+Australia, Melbourne, Melbourne Recital Centre
+(-37.82363847992168, 144.96756038164375)
+SCHUBERT Winterreise
+
+2025.04.03.
+Australia, Melbourne, Melbourne Symphony Orchestra
+(-37.81999129828773, 144.96782599963257)
+RACHMANINOFF Piano Concerto No.3
+
+2025.04.05.
+Australia, Melbourne, Melbourne Symphony Orchestra
+(-37.81999129828773, 144.96782599963257)
+RACHMANINOFF Piano Concerto No.3
+
+2025.04.07.
+Australia, Melbourne, Melbourne Symphony Orchestra
+(-37.81999129828773, 144.96782599963257)
+RACHMANINOFF Piano Concerto No.3
+
+2025.04.11.
+New Zealand, Wellington, New Zealand Symphony Orchestra
+(-41.28761636051693, 174.77566699712006)
+RACHMANINOFF Piano Concerto No.3
+
+2025.04.12.
+New Zealand, Auckland, New Zealand Symphony Orchestra
+(-36.71655209928445, 174.77686158422517)
+RACHMANINOFF Piano Concerto No.3
+
+2025.04.18.
+Singapore, Singapore City, Singapore Symphony Orchestra
+(1.2934493573559236, 103.85118923521469)
+RACHMANINOFF Piano Concerto No. 4 in G minor, op. 40
+
+2025.05.01.
+Illinois, Chicago, Chicago Symphony Orchestra
+(41.87920325291363, -87.62505427402064)
+BRAHMS Piano Concerto No. 2
+
+2025.05.02.
+Illinois, Chicago, Chicago Symphony Orchestra
+(41.87920325291363, -87.62505427402064)
+BRAHMS Piano Concerto No. 2
+
+2025.05.03.
+Illinois, Chicago, Chicago Symphony Orchestra
+(41.87920325291363, -87.62505427402064)
+BRAHMS Piano Concerto No. 2
+
+2025.05.04.
+Illinois, Chicago, Chicago Symphony Orchestra
+(41.87920325291363, -87.62505427402064)
+BRAHMS Piano Concerto No. 2
+
+2025.05.15.
+Germany, Leipzig, Leipzig Gewandhaus Orchester
+(51.337998741556994, 12.380362595721614)
+SHOSTAKOVICH Festive Overture, op. 96
+SHOSTAKOVICH 2nd Concerto for Piano and Orchestra in F major, op. 102
+SHOSTAKOVICH 4th Symphony in C minor, op. 43
+
+2025.05.18.
+Germany, Leipzig, Leipzig Gewandhaus Orchester
+(51.337998741556994, 12.380362595721614)
+SHOSTAKOVICH 1st Sonata for Piano in D major, op. 12
+SHOSTAKOVICH 2nd Sonata for Piano in B minor, op. 61
+SHOSTAKOVICH Unfinished Sonata for Violin and Piano
+SHOSTAKOVICH Sonata for Violin and Piano, op. 134
+
+2025.05.20.
+Germany, Leipzig, Leipzig Gewandhaus Orchester
+(51.337998741556994, 12.380362595721614)
+SHOSTAKOVICH 1st Trio for piano, violin and cello in C minor, op. 8
+SHOSTAKOVICH Sonata for Cello and Piano in D minor, Op. 40
+SHOSTAKOVICH 2nd Trio for Piano, Violin and Violoncello in E minor, Op. 67
+
+2025.05.21.
+Germany, Leipzig, Leipzig Gewandhaus Orchester
+(51.337998741556994, 12.380362595721614)
+SHOSTAKOVICH Sonata for viola and piano, op. 147
+SHOSTAKOVICH Quintet for piano, two violins, viola and cello in G minor, op. 57
+
+2025.05.23.
+Germany, Frankfurt, Alte Oper Frankfurt
+(50.11620386383352, 8.671905268673996)
+TCHAIKOVSKY Piano Sonata in C-sharp Minor, Op. 80
+CHOPIN
+Waltz in E Major, Op. Posth.
+Waltz in F Minor, Op. 70, No. 2
+Waltz in A♭ Major, Op. 64, No. 3
+Waltz in D♭ Major, Op. 64, No. 1
+Waltz in A Minor, Op. 34, No. 2
+Waltz in E Minor, Op. Posth.
+BARBER Sonata in E-flat minor, Op. 26
+TCHAIKOVSKY Concert Suite from the ballet The Sleeping Beauty (arr. Mikhail Pletnev)
+
+2025.05.24.
+Germany, Essen, Philharmonie Essen
+(51.446764689276314, 7.010173293435648)
+TCHAIKOVSKY Piano Sonata in C-sharp Minor, Op. 80
+CHOPIN
+Waltz in E Major, Op. Posth.
+Waltz in F Minor, Op. 70, No. 2
+Waltz in A♭ Major, Op. 64, No. 3
+Waltz in D♭ Major, Op. 64, No. 1
+Waltz in A Minor, Op. 34, No. 2
+Waltz in E Minor, Op. Posth.
+BARBER Sonata in E-flat minor, Op. 26
+TCHAIKOVSKY Concert Suite from the ballet The Sleeping Beauty (arr. Mikhail Pletnev)
+
+2025.05.26.
+Germany, Hamburg, Laeiszhalle
+(53.556162578451996, 9.980868468840608)
+TCHAIKOVSKY Piano Sonata in C-sharp Minor, Op. 80
+CHOPIN
+Waltz in E Major, Op. Posth.
+Waltz in F Minor, Op. 70, No. 2
+Waltz in A♭ Major, Op. 64, No. 3
+Waltz in D♭ Major, Op. 64, No. 1
+Waltz in A Minor, Op. 34, No. 2
+Waltz in E Minor, Op. Posth.
+BARBER Sonata in E-flat minor, Op. 26
+TCHAIKOVSKY Concert Suite from the ballet The Sleeping Beauty (arr. Mikhail Pletnev)
+
+2025.05.28.
+France, Paris, Philharmonie de Paris
+(48.891479677578985, 2.3942638109463785)
+TCHAIKOVSKY Piano Sonata in C-sharp Minor, Op. 80
+CHOPIN
+Waltz in E Major, Op. Posth.
+Waltz in F Minor, Op. 70, No. 2
+Waltz in A♭ Major, Op. 64, No. 3
+Waltz in D♭ Major, Op. 64, No. 1
+Waltz in A Minor, Op. 34, No. 2
+Waltz in E Minor, Op. Posth.
+BARBER Sonata in E-flat minor, Op. 26
+TCHAIKOVSKY Concert Suite from the ballet The Sleeping Beauty (arr. Mikhail Pletnev)
+
+2025.05.31.
+Germany, Leipzig, Leipzig Gewandhaus Orchester
+(51.33798533641247, 12.380502070577952)
+HOSTAKOVICH 12th Symphony in D minor, op. 112 (“The Year 1917”)
+SHOSTAKOVICH Concerto for Piano, Trumpet and String Orchestra in C minor, op. 35
+SHOSTAKOVICH 9th Symphony in E-flat major, op. 70
+
+2025.07.13.
+Germany, Bad Kissingen, Bavarian Radio Symphony Orchestra
+(50.197555963409684, 10.075461897512966)
+PROKOFIEV Piano Concerto No. 3 in C major
+
+2025.07.22.
+Switzerland, Verbier, Verbier Festival
+(46.101278895332555, 7.218136274337262)
+BARTÓK Concerto for Two Pianos, Percussion and Orchestra
+Klaus Mäkelä, conductor
+Sergei Babayan, piano
+
+2025.07.23.
+Switzerland, Verbier, Verbier Festival
+(46.101278895332555, 7.218136274337262)
+TCHAIKOVSKY Piano Sonata in C-sharp Minor, Op. 80
+CHOPIN
+Waltz in E Major, Op. Posth.
+Waltz in F Minor, Op. 70, No. 2
+Waltz in A♭ Major, Op. 64, No. 3
+Waltz in D♭ Major, Op. 64, No. 1
+Waltz in A Minor, Op. 34, No. 2
+Waltz in E Minor, Op. Posth.
+BARBER Sonata in E-flat minor, Op. 26
+TCHAIKOVSKY Concert Suite from the ballet The Sleeping Beauty (arr. Mikhail Pletnev)
+
+2025.07.25.
+Switzerland, Verbier, Verbier Festival
+(46.101278895332555, 7.218136274337262)
+RACHMANINOFF Trio élégiaque No. 2 in D minor Op. 9
+
+2025.07.31.
+Austria, Salzburg, Salzburg Festival
+(47.80282604527426, 13.038671229179187)
+TCHAIKOVSKY Piano Sonata in C-sharp Minor, Op. 80
+CHOPIN
+Waltz in E Major, Op. Posth.
+Waltz in F Minor, Op. 70, No. 2
+Waltz in A♭ Major, Op. 64, No. 3
+Waltz in D♭ Major, Op. 64, No. 1
+Waltz in A Minor, Op. 34, No. 2
+Waltz in E Minor, Op. Posth.
+GINASTERA Sonata for Piano No. 2 op. 53
+TCHAIKOVSKY Concert Suite from the ballet The Sleeping Beauty (arr. Mikhail Pletnev)

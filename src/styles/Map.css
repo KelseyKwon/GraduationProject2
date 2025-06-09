@@ -1,0 +1,86 @@
+/* 전체 화면 설정 */
+html,
+body,
+#root,
+.map-container,
+.map-background {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* 맵 + 사이드바를 감싸는 컨테이너 */
+.map-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* 헤더 아래 지도가 차지할 영역 */
+.map-content {
+  display: flex;
+  flex-direction: row; /* column → row */
+  height: 100vh;
+}
+
+/* 지도 영역: 남은 공간 전부 차지, 축소 가능하도록 설정 */
+.map-background {
+  flex: 1; /* 지도가 남은 공간 모두 차지 */
+  position: relative;
+}
+
+.map-background iframe {
+  pointer-events: auto;
+}
+
+/* 사이드바: flex 아이템으로 고정 너비 */
+.map-sidebar {
+  width: 400px; /* or 적절한 너비 */
+  height: 100vh; /* 화면 전체 높이 */
+  overflow-y: auto; /* 세로 스크롤 추가 */
+  background-color: white;
+  /* position: absolute; 오른쪽에 고정 */
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+/* 마커 인포윈도우 스타일 */
+.gm-style .gm-style-iw-c {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  background: white;
+}
+
+/* 폴리라인 애니메이션 효과 */
+.polyline-path {
+  stroke: #8a2be2;
+  stroke-opacity: 0.8;
+  stroke-width: 4;
+  stroke-dasharray: 6;
+  animation: dashmove 4s linear infinite;
+}
+
+@keyframes dashmove {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 100;
+  }
+}
+/* InfoWindow가 사이드바나 부모 컨테이너 뒤에 가려지지 않도록 */
+.gm-style-iw {
+  z-index: 10000 !important;
+}
+
+/* map-background 영역에서 overflow를 풀어서 팝업이 잘려나가지 않게 */
+.map-background {
+  overflow: visible; /* 기존 overflow hidden 또는 다른 설정이 있으면 덮어쓰기 */
+}
+
+/* 사이드바가 InfoWindow 뒤에 있도록 z-index 낮추기 */
+.map-sidebar {
+  z-index: 1 !important;
+}
