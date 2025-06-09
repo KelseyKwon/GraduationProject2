@@ -72,6 +72,11 @@ const Map = () => {
   const location = useLocation();
   const artistId = searchParams.get("artist") || "1";
   const artist = artistData[artistId];
+  const [shouldShowSidebar, setShouldShowSidebar] = useState(false);
+
+  useEffect(() => {
+    setShouldShowSidebar(location.pathname.startsWith("/map"));
+  }, [location.pathname]);
 
   const [map, setMap] = useState(null);
   const [infoPos, setInfoPos] = useState(null);
@@ -111,11 +116,21 @@ const Map = () => {
       return marker;
     });
     new MarkerClusterer({ markers, map });
+    if (sortedEvents.length > 0) {
+    const bounds = new window.google.maps.LatLngBounds();
+    sortedEvents.forEach((e) => {
+      bounds.extend({
+        lat: e.coordinates.latitude,
+        lng: e.coordinates.longitude,
+      });
+    });
+    map.fitBounds(bounds);
+  }
     return () => markers.forEach((m) => m.setMap(null));
   }, [map, sortedEvents]);
 
   const todayTime = useMemo(() => new Date().setHours(0, 0, 0, 0), []);
-  const shouldShowSidebar = location.pathname.startsWith("/map");
+//  const shouldShowSidebar = location.pathname.startsWith("/map");
 
   return (
     <div className="map-container">
@@ -130,7 +145,9 @@ const Map = () => {
               mapContainerStyle={containerStyle}
               center={worldCenter}
               zoom={defaultZoom}
-              onLoad={setMap}
+              onLoad={(map) => {
+                setMap(map);
+              }}
               options={{
                 mapTypeControl: false,
                 streetViewControl: false,
@@ -179,7 +196,6 @@ const Map = () => {
             </GoogleMap>
           </LoadScript>
         </div>
-        {shouldShowSidebar && (
           <div className="map-sidebar">
             <Sidebar
               date={new Date(todayTime).toLocaleDateString("ko-KR", {
@@ -202,10 +218,9 @@ const Map = () => {
                   });
                   map.setZoom(defaultZoom);
                 }
-              }}
+             }}
             />
           </div>
-        )}
       </div>
     </div>
   );

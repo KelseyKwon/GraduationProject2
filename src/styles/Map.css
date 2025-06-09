@@ -40,7 +40,7 @@ body,
   height: 100vh; /* 화면 전체 높이 */
   overflow-y: auto; /* 세로 스크롤 추가 */
   background-color: white;
-  position: absolute; /* 오른쪽에 고정 */
+  /* position: absolute; 오른쪽에 고정 */
   right: 0;
   top: 0;
   z-index: 10;
