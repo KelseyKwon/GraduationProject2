@@ -100,8 +100,29 @@ const Mapinfo = () => {
           </div>
         );
       }
+      return (
+        <div className="info-card">
+          <img
+            src={concertImage}
+            alt={`${eventDetails.venue.name} 공연장 이미지`}
+            className="info-image"
+          />
+          <div className="info-details">
+            <h3 className="info-title">{eventDetails.venue.name}</h3>
+            <p className="info-description">
+              {eventDetails.details ? eventDetails.details : ""}
+            </p>
+            <div className="info-tags">
+            <span className="tag">{eventDetails.venue.country}</span>
+              <span className="tag">{eventDetails.venue.city}</span>
+              <span className="tag">공연 날짜: {eventDetails.date}</span>
+              {/* 필요하면 인원 등 기타 태그 추가 가능 */}
+            </div>
+          </div>
+        </div>
+      );
       // 🔥 변경: BasicInfo 컴포넌트로 대체
-      return <BasicInfo venueName={eventDetails.venue.name} />;
+//      return <BasicInfo venueName={eventDetails.venue.name} />;
     } else if (location.pathname.includes("concert")) {
       return <ConcertInfo />; // 필요 시 유지
     } else if (location.pathname.includes("near")) {

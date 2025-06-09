@@ -65,7 +65,7 @@ const NearInfo = ({ concert, artistId }) => {
 
   return (
     <LoadScript
-      googleMapsApiKey="AIzaSyAEvELryy_YAdKvjzbf3bnGQ9IhlJ3xRaY"
+      googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}
       libraries={libraries}
       onLoad={() => {
         setMapReady(true);
