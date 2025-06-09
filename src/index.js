@@ -1,14 +1,14 @@
 // src/index.js
 import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css";
+import ReactDOM from "react-dom";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  // 여기에서 전체 앱을 한 번만 BrowserRouter로 감쌉니다.
+ReactDOM.render(
   <BrowserRouter>
+    {" "}
+    {/* ← 여기서만 한 번 */}
     <App />
-  </BrowserRouter>
+  </BrowserRouter>,
+  document.getElementById("root")
 );

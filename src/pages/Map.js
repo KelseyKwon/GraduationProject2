@@ -3,7 +3,6 @@ import { useSearchParams, useNavigate, useLocation } from "react-router-dom";
 import {
   GoogleMap,
   LoadScript,
-  Marker,
   Polyline,
   InfoWindow,
 } from "@react-google-maps/api";
@@ -19,10 +18,11 @@ import dataLang from "../data/ArtistData_Lang.json";
 import dataCho from "../data/ArtistData_Cho.json";
 import dataYuja from "../data/ArtistData_Yuja.json";
 
+// 맵 설정 상수
 const containerStyle = { width: "100%", height: "100vh" };
 const worldCenter = { lat: 20, lng: 0 };
-// 🔍 모든 줌 레벨 기본 18로 설정
 const defaultZoom = 18;
+const libraries = ["places"];
 
 const parseDate = (dateString) => {
   const [year, month, day] = dateString.split(".").filter(Boolean);
@@ -46,7 +46,6 @@ const getArtistEvents = (id) => {
   }
 };
 
-// 추천 경로 기준: 최근접 이웃 근사 알고리즘
 const computeRoute = (points) => {
   if (points.length < 2) return [];
   const remaining = [...points];
@@ -74,21 +73,9 @@ const Map = () => {
   const artistId = searchParams.get("artist") || "1";
   const artist = artistData[artistId];
 
-  const [userLocation, setUserLocation] = useState(null);
-  useEffect(() => {
-    if (navigator.geolocation) {
-      const id = navigator.geolocation.watchPosition(
-        (pos) =>
-          setUserLocation({
-            lat: pos.coords.latitude,
-            lng: pos.coords.longitude,
-          }),
-        (err) => console.error(err),
-        { enableHighAccuracy: true, timeout: 5000, maximumAge: 0 }
-      );
-      return () => navigator.geolocation.clearWatch(id);
-    }
-  }, []);
+  const [map, setMap] = useState(null);
+  const [infoPos, setInfoPos] = useState(null);
+  const [infoEvent, setInfoEvent] = useState(null);
 
   const sortedEvents = useMemo(
     () =>
@@ -97,53 +84,53 @@ const Map = () => {
       ),
     [artistId]
   );
-  const allCoords = sortedEvents.map((e) => ({
-    lat: e.coordinates.latitude,
-    lng: e.coordinates.longitude,
-  }));
-  const routePath = useMemo(() => computeRoute(allCoords), [allCoords]);
+  const routePath = useMemo(
+    () =>
+      computeRoute(
+        sortedEvents.map((e) => ({
+          lat: e.coordinates.latitude,
+          lng: e.coordinates.longitude,
+        }))
+      ),
+    [sortedEvents]
+  );
 
-  const [map, setMap] = useState(null);
   useEffect(() => {
-    if (map) {
-      const markers = sortedEvents.map(
-        (e) =>
-          new window.google.maps.Marker({
-            position: {
-              lat: e.coordinates.latitude,
-              lng: e.coordinates.longitude,
-            },
-          })
-      );
-      new MarkerClusterer({ markers, map });
-    }
+    if (!map) return;
+    const markers = sortedEvents.map((e) => {
+      const marker = new window.google.maps.Marker({
+        position: { lat: e.coordinates.latitude, lng: e.coordinates.longitude },
+        map,
+      });
+      marker.addListener("click", () => {
+        map.panTo(marker.getPosition());
+        map.setZoom(defaultZoom);
+        setInfoPos(marker.getPosition().toJSON());
+        setInfoEvent(e);
+      });
+      return marker;
+    });
+    new MarkerClusterer({ markers, map });
+    return () => markers.forEach((m) => m.setMap(null));
   }, [map, sortedEvents]);
 
   const todayTime = useMemo(() => new Date().setHours(0, 0, 0, 0), []);
   const shouldShowSidebar = location.pathname.startsWith("/map");
 
-  const [infoPos, setInfoPos] = useState(null);
-  const [infoEvent, setInfoEvent] = useState(null);
-
-  const onMarkerClick = (event, e) => {
-    const pos = { lat: e.coordinates.latitude, lng: e.coordinates.longitude };
-    map.panTo(pos);
-    map.setZoom(18); // 🔍 클릭 시 확대 레벨 18
-    setInfoPos(pos);
-    setInfoEvent(e);
-  };
-
   return (
     <div className="map-container">
-      <Header title={artist.mapName + " – 추천 경로"} />
+      <Header title={`${artist.mapName} – 추천 경로`} />
       <div className="map-content">
         <div className="map-background">
-          <LoadScript googleMapsApiKey="AIzaSyB7qMWWpc8N_fk7z1o45qYlAGY8uOlnCvM">
+          <LoadScript
+            googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}
+            libraries={libraries}
+          >
             <GoogleMap
               mapContainerStyle={containerStyle}
               center={worldCenter}
               zoom={defaultZoom}
-              onLoad={(m) => setMap(m)}
+              onLoad={setMap}
               options={{
                 mapTypeControl: false,
                 streetViewControl: false,
@@ -161,40 +148,19 @@ const Map = () => {
                 noWrap: true,
               }}
             >
-              {routePath.length >= 2 && (
+              {routePath.length > 1 && (
                 <Polyline
                   path={routePath}
-                  options={{
-                    strokeColor: "#FF5722",
-                    strokeOpacity: 0.8,
-                    strokeWeight: 5,
-                  }}
+                  options={{ strokeOpacity: 0.8, strokeWeight: 5 }}
                 />
               )}
-              {sortedEvents.map((e, idx) => {
-                const pos = {
-                  lat: e.coordinates.latitude,
-                  lng: e.coordinates.longitude,
-                };
-                return (
-                  <Marker
-                    key={idx}
-                    position={pos}
-                    onClick={(ev) => onMarkerClick(ev, e)}
-                  />
-                );
-              })}
-
-              {/* ⭐ 상세보기 버튼은 이 InfoWindow 내부, 마커 클릭 시 이 위치에 출력됩니다 ⭐ */}
               {infoPos && infoEvent && (
                 <InfoWindow
                   position={infoPos}
                   onCloseClick={() => setInfoPos(null)}
                 >
                   <div>
-                    <div>
-                      <strong>{infoEvent.venue.name}</strong>
-                    </div>
+                    <strong>{infoEvent.venue.name}</strong>
                     <div>{infoEvent.date}</div>
                     <button
                       onClick={() =>
@@ -213,7 +179,6 @@ const Map = () => {
             </GoogleMap>
           </LoadScript>
         </div>
-
         {shouldShowSidebar && (
           <div className="map-sidebar">
             <Sidebar
@@ -231,12 +196,11 @@ const Map = () => {
                   (ev) => `${ev.venue.city}, ${ev.venue.name}` === name
                 );
                 if (ev && map) {
-                  const p = {
+                  map.panTo({
                     lat: ev.coordinates.latitude,
                     lng: ev.coordinates.longitude,
-                  };
-                  map.panTo(p);
-                  map.setZoom(18); // 🔍 사이드바 클릭 시 확대 레벨 18
+                  });
+                  map.setZoom(defaultZoom);
                 }
               }}
             />

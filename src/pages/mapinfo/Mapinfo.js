@@ -5,11 +5,11 @@ import Header from "../../component/Header";
 import Sidebar2 from "../../component/Sidebar2";
 import "../../styles/Mapinfo.css";
 import concertImage from "../../img/concert.png";
+import BasicInfo from "./BasicInfo";
 import ConcertInfo from "./ConcertInfo";
 import NearInfo from "./NearInfo";
 import AccompanyInfo from "./AccompanyInfo";
 import ArtistPathTracker from "../../component/ArtistPathTracker";
-
 
 import { useSearchParams } from "react-router-dom";
 import dataLim from "../../data/ArtistData_Lim.json";
@@ -20,21 +20,27 @@ import dataYuja from "../../data/ArtistData_Yuja.json";
 
 const getArtistDataById = (id) => {
   switch (id) {
-    case "1": return dataLim;
-    case "2": return dataTrif;
-    case "3": return dataLang;
-    case "4": return dataCho;
-    case "5": return dataYuja;
-    default: return [];
+    case "1":
+      return dataLim;
+    case "2":
+      return dataTrif;
+    case "3":
+      return dataLang;
+    case "4":
+      return dataCho;
+    case "5":
+      return dataYuja;
+    default:
+      return [];
   }
 };
 
 const artistNames = {
-  "1": "임윤찬",
-  "2": "다니엘 트리포",
-  "3": "랑랑",
-  "4": "조성진",
-  "5": "유자왕",
+  1: "임윤찬",
+  2: "다니엘 트리포",
+  3: "랑랑",
+  4: "조성진",
+  5: "유자왕",
 };
 
 const parseDate = (dateString) => {
@@ -59,7 +65,9 @@ const Mapinfo = () => {
 
   // 날짜순 정렬
   const filteredEvents = useMemo(() => {
-    return artistData.slice().sort((a, b) => parseDate(a.date) - parseDate(b.date));
+    return artistData
+      .slice()
+      .sort((a, b) => parseDate(a.date) - parseDate(b.date));
   }, [artistData]);
 
   // eventQuery와 매칭되는 이벤트 찾기
@@ -84,7 +92,6 @@ const Mapinfo = () => {
   };
 
   const renderContent = () => {
-    // 기존 라우팅 유지하면서 쿼리파라미터 있는 basic 경로에선 상세공연정보 표시
     if (location.pathname.includes("basic")) {
       if (!eventDetails) {
         return (
@@ -93,31 +100,12 @@ const Mapinfo = () => {
           </div>
         );
       }
-      return (
-        <div className="info-card">
-          <img
-            src={concertImage}
-            alt={`${eventDetails.venue.name} 공연장 이미지`}
-            className="info-image"
-          />
-          <div className="info-details">
-            <h3 className="info-title">{eventDetails.venue.name}</h3>
-            <p className="info-description">
-              {eventDetails.details ? eventDetails.details : ""}
-            </p>
-            <div className="info-tags">
-            <span className="tag">{eventDetails.venue.country}</span>
-              <span className="tag">{eventDetails.venue.city}</span>
-              <span className="tag">공연 날짜: {eventDetails.date}</span>
-              {/* 필요하면 인원 등 기타 태그 추가 가능 */}
-            </div>
-          </div>
-        </div>
-      );
+      // 🔥 변경: BasicInfo 컴포넌트로 대체
+      return <BasicInfo venueName={eventDetails.venue.name} />;
     } else if (location.pathname.includes("concert")) {
-      return <ConcertInfo />;
+      return <ConcertInfo />; // 필요 시 유지
     } else if (location.pathname.includes("near")) {
-      return <NearInfo concert={eventDetails} artistId={artistId}/>;
+      return <NearInfo concert={eventDetails} artistId={artistId} />;
     } else if (location.pathname.includes("accompany")) {
       return <AccompanyInfo />;
     }

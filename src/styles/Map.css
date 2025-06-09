@@ -1,13 +1,13 @@
 /* 전체 화면 설정 */
+html,
 body,
-html {
+#root,
+.map-container,
+.map-background {
+  height: 100%;
   margin: 0;
   padding: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
 }
-
 /* 맵 + 사이드바를 감싸는 컨테이너 */
 .map-container {
   width: 100vw;

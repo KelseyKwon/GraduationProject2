@@ -1,6 +1,9 @@
 {
   "name": "gp2",
   "version": "0.1.0",
+  "proxy": "http://localhost:4000",
+  "description": "",
+  "main": "index.js",
   "private": true,
   "dependencies": {
     "@react-google-maps/api": "^2.20.5",

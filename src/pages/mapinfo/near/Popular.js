@@ -33,7 +33,10 @@ const Popular = () => {
   };
 
   return (
-    <LoadScript googleMapsApiKey="YOUR_API_KEY" libraries={["places"]}>
+    <LoadScript
+      googleMapsApiKey="AIzaSyBW5PKkaDcfAHlGWjW94ikbGg6l9rws5nU"
+      libraries={["places"]}
+    >
       <h1>Popular Attractions</h1>
       <GoogleMap
         mapContainerStyle={mapContainerStyle}

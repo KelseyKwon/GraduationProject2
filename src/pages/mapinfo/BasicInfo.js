@@ -1,77 +1,58 @@
-import React, { useState, useEffect } from "react";
+import React, { useReducer, useEffect } from "react";
 import concertImg from "../../img/concert.png";
 import "../../styles/Mapinfo.css";
+import "../../styles/BasicInfo.css";
 
-// GPT API 직접 호출
-const summarizeReviews = async (reviews) => {
-  const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
-  const reviewTexts = reviews
-    .map((r) => `- (${r.rating}) ${r.text}`)
-    .join("\n");
-  const prompt = `다음 공연장 리뷰를 참고해 평균 평점을 계산하고, 주요 키워드 세 가지를 요약하며, 마지막에 한 문장으로 총평을 작성하세요.\n${reviewTexts}`;
-
-  const response = await fetch("https://api.openai.com/v1/chat/completions", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${apiKey}`,
-    },
-    body: JSON.stringify({
-      model: "gpt-4o-mini",
-      messages: [{ role: "user", content: prompt }],
-    }),
-  });
-  const data = await response.json();
-  return data.choices?.[0]?.message?.content?.trim() || "";
+const initialState = {
+  loading: true,
+  error: null,
+  summary: "",
 };
 
-// Google Places API로 리뷰 가져오기
-const fetchReviews = async (placeName) => {
-  const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
-  const findRes = await fetch(
-    `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=${encodeURIComponent(
-      placeName
-    )}&inputtype=textquery&fields=place_id&key=${apiKey}`
-  );
-  const findData = await findRes.json();
-  if (!findData.candidates?.length) return [];
-  const placeId = findData.candidates[0].place_id;
-  const detailsRes = await fetch(
-    `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=rating,reviews&key=${apiKey}`
-  );
-  const detailsData = await detailsRes.json();
-  return (
-    detailsData.result?.reviews
-      ?.slice(0, 5)
-      .map((r) => ({ text: r.text, rating: r.rating })) || []
-  );
+function reducer(state, action) {
+  switch (action.type) {
+    case "FETCH_INIT":
+      return { ...state, loading: true, error: null };
+    case "FETCH_SUCCESS":
+      return { ...state, loading: false, summary: action.payload };
+    case "FETCH_FAILURE":
+      return { ...state, loading: false, error: action.payload };
+    default:
+      return state;
+  }
+}
+
+const fetchSummary = async (venueName) => {
+  const res = await fetch("/api/summary", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ placeName: venueName }),
+  });
+  const { summary } = await res.json();
+  return summary;
 };
 
 const BasicInfo = ({ venueName }) => {
-  const [reviewSummary, setReviewSummary] = useState("");
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(() => {
     const loadSummary = async () => {
+      dispatch({ type: "FETCH_INIT" });
       try {
-        setLoading(true);
-        const reviews = await fetchReviews(venueName);
-        if (!reviews.length) {
-          setReviewSummary("리뷰가 없습니다.");
-        } else {
-          const summary = await summarizeReviews(reviews);
-          setReviewSummary(summary);
-        }
+        const summary = await fetchSummary(venueName);
+        dispatch({ type: "FETCH_SUCCESS", payload: summary });
       } catch (err) {
         console.error("리뷰 요약 생성 중 오류:", err);
-        setError("리뷰 요약을 불러오는 중 오류가 발생했습니다.");
-      } finally {
-        setLoading(false);
+        dispatch({
+          type: "FETCH_FAILURE",
+          payload: "리뷰 요약을 불러오는 중 오류가 발생했습니다.",
+        });
       }
     };
     loadSummary();
   }, [venueName]);
+
+  const { loading, error, summary } = state;
 
   return (
     <div className="basic-info">
@@ -85,14 +66,13 @@ const BasicInfo = ({ venueName }) => {
           <span className="tag">리사이틀홀</span>
           <span className="tag">1800명</span>
         </div>
-        {/* 로딩/오류/요약 표시 */}
         {loading && (
           <div className="basic-info-loading">리뷰를 불러오는 중...</div>
         )}
         {error && <div className="basic-info-error">{error}</div>}
         {!loading && !error && (
           <div className="basic-info-review-summary">
-            <strong>리뷰 요약:</strong> {reviewSummary}
+            <strong>리뷰 요약:</strong> {summary}
           </div>
         )}
       </div>

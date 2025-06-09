@@ -33,7 +33,10 @@ const Restaurant = () => {
   };
 
   return (
-    <LoadScript googleMapsApiKey="YOUR_API_KEY" libraries={["places"]}>
+    <LoadScript
+      googleMapsApiKey="AIzaSyBW5PKkaDcfAHlGWjW94ikbGg6l9rws5nU"
+      libraries={["places"]}
+    >
       <h1>Nearby Restaurants</h1>
       <GoogleMap
         mapContainerStyle={mapContainerStyle}
